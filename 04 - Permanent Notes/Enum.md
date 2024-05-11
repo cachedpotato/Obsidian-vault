@@ -1,8 +1,47 @@
 ---
 tags:
   - Rust
-links:
+links: "[[Rust]]"
 ---
+# Enum
+enum is a type that can be one of a given set of types. types within enum can be pretty much anything.
+```rust
+enum Message {
+	Quit, //unit struct
+	Write(String), //tuple struct
+	ChangeColor(u8, u8, u8), //tuple struct,
+	Position {x: i32, y: i32}, //struct	
+}
+
+fn main() {
+	let m: Message = Message::Write(String::from("Hello"));
+	//println!("{m}") <- does not work because it does not have
+	//display trait
+}
+```
+
+## Implementation
+
+```rust
+impl Message {
+	fn call(&self) {
+		match self {
+			Message::Quit => println!("quitting"), //LAMBDA BOIS
+			Message::Write(s) => println!("wrote {s}"),
+			_ => println!("hello")
+		}
+	}
+}
+
+fn main() {
+	let m: Message = Message::Write(String::from("hello"));
+	m.call(); //will print "write hello" in stdout
+}
+```
+
+## Notable Enums
+
+There are many ways enums can be used, but here are some great enums that are included in the prelude. Option takes care of the null problem and Result is used for error handling.
 ### Option
 ```rust
 enum Option<T> {
@@ -22,5 +61,7 @@ enum Result<T> {
 ```
 
 If some function returns a result, it's best practice to do [[Error Handling]], which is basically taking care of error cases.
+
+
 
 Created: 2024-05-09

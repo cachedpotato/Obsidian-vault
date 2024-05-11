@@ -1,7 +1,7 @@
 ---
 tags:
   - Rust
-links:
+links: "[[Rust]]"
 ---
 ## String and ```String```
 

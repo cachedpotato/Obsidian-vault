@@ -1,7 +1,7 @@
 ---
 tags:
   - Rust
-links:
+links: "[[Rust]]"
 ---
 # Structs
 at first glance structs use the same as structs in any other functional language:
