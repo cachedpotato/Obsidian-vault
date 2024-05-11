@@ -4,16 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "934a65ee84b1861a",
+        "id": "5dee1b99deb2a8b7",
         "type": "tabs",
         "children": [
           {
-            "id": "e75b511ff72036fa",
+            "id": "94856175cceb8de1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Permanent Notes/Implementation.md",
+                "file": "04 - Permanent Notes/Rust Types.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "00a98434add5d201",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Modules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35b386a5ab69bb4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Paths.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "308130dcdf828eff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Pattern Matching.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Implementation.md",
+                "file": "04 - Permanent Notes/Rust Types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +134,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Implementation.md",
+                "file": "04 - Permanent Notes/Rust Types.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -144,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Implementation.md"
+                "file": "04 - Permanent Notes/Rust Types.md"
               }
             }
           }
@@ -161,7 +197,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Implementation.md",
+                "file": "04 - Permanent Notes/Rust Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 449
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,23 +226,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "eeabe2e5839d1295",
+  "active": "94856175cceb8de1",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Structs.md",
-    "04 - Permanent Notes/Rust Types.md",
-    "04 - Permanent Notes/Enum.md",
-    "04 - Permanent Notes/String.md",
-    "04 - Permanent Notes/Private and Public.md",
+    "04 - Permanent Notes/Pattern Matching.md",
+    "04 - Permanent Notes/Modules.md",
     "04 - Permanent Notes/Paths.md",
+    "04 - Permanent Notes/Rust Types.md",
     "04 - Permanent Notes/Rust.md",
+    "04 - Permanent Notes/Error Handling.md",
+    "04 - Permanent Notes/Hilbert Space.md",
+    "04 - Permanent Notes/Structs.md",
+    "04 - Permanent Notes/Congestion Control.md",
+    "04 - Permanent Notes/Domain-Adaptive Neural Network.md",
+    "04 - Permanent Notes/Maximum Mean Discrepancy.md",
+    "04 - Permanent Notes/Ownership in Rust.md",
+    "04 - Permanent Notes/Private and Public.md",
+    "04 - Permanent Notes/Representor Theorem.md",
+    "04 - Permanent Notes/String.md",
+    "04 - Permanent Notes/Reference.md",
+    "04 - Permanent Notes/Enum.md",
+    "04 - Permanent Notes/Implementation.md",
+    "README.md",
     "04 - Permanent Notes/Use.md",
     "04 - Permanent Notes/Module System.md",
-    "04 - Permanent Notes/Modules.md",
     "04 - Permanent Notes/Cargo Basics.md",
     "Untitled 1.md",
-    "04 - Permanent Notes/Pattern Matching.md",
-    "04 - Permanent Notes/Error Handling.md",
-    "04 - Permanent Notes/Implementation.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"

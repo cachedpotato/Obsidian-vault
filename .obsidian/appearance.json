@@ -1,6 +1,11 @@
 {
   "accentColor": "",
-  "cssTheme": "",
+  "cssTheme": "AnuPpuccin",
   "textFontFamily": "Source Code Pro",
-  "monospaceFontFamily": "Source Code Pro"
+  "monospaceFontFamily": "Source Code Pro",
+  "enabledCssSnippets": [
+    "extended-colorschemes",
+    "custom-rainbow-colors"
+  ],
+  "baseFontSize": 18
 }

@@ -33,7 +33,7 @@ pub fn eat_at_restaurant() {
 }
 ```
 
-### structs and enums
+## structs and enums
 you can make structs/enums within modules public, and for structs, just like anything else these are set to private by default.
 ```rust
 mod back_of_house {
