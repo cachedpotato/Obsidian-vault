@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Paths
 a path can take two forms, just like in filesystem:
@@ -92,5 +91,5 @@ fn take_payment() {
 
 ## References
 
-
+categories: [[Rust]]
 Created: 2024-05-11

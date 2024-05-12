@@ -1,8 +1,10 @@
 ---
 tags: 
-links:
 ---
 # {{title}}
-## References
 
+
+---
+Categories: 
+References:
 Created: {{date}}

@@ -13,43 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Permanent Notes/Rust Types.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "00a98434add5d201",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Modules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "35b386a5ab69bb4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Paths.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "308130dcdf828eff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Pattern Matching.md",
+                "file": "Hash Map in Rust.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Rust Types.md",
+                "file": "Hash Map in Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +98,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Rust Types.md",
+                "file": "Hash Map in Rust.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -157,7 +121,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.713275462622442,
+                  "scale": 1.0000000000000004,
                   "close": true
                 }
               }
@@ -180,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Rust Types.md"
+                "file": "Hash Map in Rust.md"
               }
             }
           }
@@ -197,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Rust Types.md",
+                "file": "Hash Map in Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,29 +192,32 @@
   },
   "active": "94856175cceb8de1",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Pattern Matching.md",
-    "04 - Permanent Notes/Modules.md",
-    "04 - Permanent Notes/Paths.md",
+    "Hash Map in Rust.md",
     "04 - Permanent Notes/Rust Types.md",
-    "04 - Permanent Notes/Rust.md",
-    "04 - Permanent Notes/Error Handling.md",
-    "04 - Permanent Notes/Hilbert Space.md",
-    "04 - Permanent Notes/Structs.md",
-    "04 - Permanent Notes/Congestion Control.md",
-    "04 - Permanent Notes/Domain-Adaptive Neural Network.md",
-    "04 - Permanent Notes/Maximum Mean Discrepancy.md",
+    "Vector in Rust.md",
+    "04 - Permanent Notes/String in Rust.md",
     "04 - Permanent Notes/Ownership in Rust.md",
-    "04 - Permanent Notes/Private and Public.md",
-    "04 - Permanent Notes/Representor Theorem.md",
-    "04 - Permanent Notes/String.md",
-    "04 - Permanent Notes/Reference.md",
-    "04 - Permanent Notes/Enum.md",
-    "04 - Permanent Notes/Implementation.md",
+    "04 - Permanent Notes/Pattern Matching.md",
+    "04 - Permanent Notes/Factor Analysis.md",
+    "00 - MoC/Rust.md",
     "README.md",
-    "04 - Permanent Notes/Use.md",
+    "04 - Permanent Notes/Reference.md",
+    "04 - Permanent Notes/Structs.md",
     "04 - Permanent Notes/Module System.md",
+    "04 - Permanent Notes/Modules.md",
+    "04 - Permanent Notes/Private and Public.md",
+    "04 - Permanent Notes/Enum.md",
+    "Templates/Default Template.md",
+    "04 - Permanent Notes/Paths.md",
+    "04 - Permanent Notes/Cargo TOML.md",
+    "04 - Permanent Notes/Error Handling in Rust.md",
+    "04 - Permanent Notes/Use.md",
+    "04 - Permanent Notes/Reproducing Kernel Hilbert Space.md",
+    "04 - Permanent Notes/Representor Theorem.md",
+    "04 - Permanent Notes/Maximum Mean Discrepancy.md",
     "04 - Permanent Notes/Cargo Basics.md",
-    "Untitled 1.md",
+    "04 - Permanent Notes/Implementation.md",
+    "04 - Permanent Notes/Hilbert Space.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"

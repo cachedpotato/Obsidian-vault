@@ -33,5 +33,13 @@
       ],
       "key": "L"
     }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }

@@ -14,7 +14,7 @@ My main interests are:
 - Bioinformatics
 - Statistics
 - Computer Network
-- Programming language, right now I want to learn Rust and JS.
+- Programming language, right now I want to learn Rust, JS and C#.
 - Any and everything related to game production (I want to make at least one game before I die), and yes this includes art and music
 
 Right now there's really nothing to see here, but I hope I can keep taking notes and create a fully-fledged "second-brain" or whatever people call it these days. I have a bad habit of starting something and giving up like a week in, hope that's not the case this time around.

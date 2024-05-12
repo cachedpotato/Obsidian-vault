@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Use
 ```use``` is a useful keyword to reduce repetition when calling modules/module functions.
@@ -90,7 +89,7 @@ mod front_of_house {
 
 pub use crate::front_of_house::hosting;
 pub fn eat_at_restaurant() {
-	add_to_waitlist();
+	hosting::add_to_waitlist();
 }
 ```
 
@@ -124,4 +123,5 @@ use std::collections::*
 above example will bring ALL public items into current scope.
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-11

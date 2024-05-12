@@ -1,7 +1,7 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
+parent: "[[Rust]]"
 ---
 Cargo is the package manager for [[Rust]]. The following are basic commands of cargo:
 

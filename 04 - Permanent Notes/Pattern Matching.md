@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Pattern Matching
 There are multiple types of pattern matching but let's get the important ones out of the way first.
@@ -60,4 +59,5 @@ if let Ok(n) = confusing {println!("Everything under control")};
 
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-11

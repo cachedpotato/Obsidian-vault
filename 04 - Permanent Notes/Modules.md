@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Modules
 while there isn't a said rule for organizing modules, the Rust book provides a useful cheat sheet that can serve as a great starting point.
@@ -31,4 +30,5 @@ let a: Asparagus = Asparagus
 
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-11

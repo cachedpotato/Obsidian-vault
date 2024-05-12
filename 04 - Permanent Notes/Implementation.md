@@ -1,6 +1,6 @@
 ---
 tags: 
-links:
+parent: "[[Rust]]"
 ---
 # Implementation
 all functions within the implementation box is called associated function.

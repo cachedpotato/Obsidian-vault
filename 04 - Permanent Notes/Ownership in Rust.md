@@ -1,18 +1,14 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Ownership
 one can say this is THE DEFINING factor of Rust... But what the hell even is it?
 
 ownership is a set of rules that govern how a rust program manages memory.
-basically, instead of having a garbage collector, Rust _forces_ you to manage
-memory through ownership & borrowing, and make sure your code is memory-safe.
+basically, instead of having a garbage collector, Rust _forces_ you to manage memory through ownership & borrowing, and make sure your code is memory-safe.
 
-When your code uses memory (or rather allocates) in the [[Stack|stack]], all is
-good but problems happen once you allocate memory in [[Heap|heap]]. Allocating
-memory and removing them is a hassle (looking at you C/C++), and often times lead to memory leakage. So the question is: How does Rust stop this?
+When your code uses memory (or rather allocates) in the [[Stack|stack]], all is good but problems happen once you allocate memory in [[Heap|heap]]. Allocating memory and removing them is a hassle (looking at you C/C++), and often times lead to memory leakage. So the question is: How does Rust stop this?
 
 ## Ownership rules
 There are a lot of stuff Rust do to ensure memory safety, but the crux of it comes down to the "ownership rule":
@@ -31,6 +27,17 @@ println!("{x} and {y} both works");
 ```
 Stack-stored types are the likes of u8, i32, usize, and tuples of said types.
 
-## References
+## Ownership and loops
+for and while loops will consume whatever's trying to be iterated. Therefore, it's best to pass in a reference.
+```rust
+let mut v: Vec<i32> = ec![1, 2, 3];
+for i in &mut v { //reference of vector
+	*i *= 2; //we must dereference it first
+	println!("element changed to {i}");
+}
+```
 
+---
+Categories: [[Rust]],[[Memory Management]]
+References:
 Created: 2024-05-09

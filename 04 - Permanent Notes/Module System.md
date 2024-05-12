@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Module System
 Rust has a number of features that allows you to manage your code and is collectively referred to as the module system. The system includes:
@@ -32,4 +31,5 @@ path allows you to name items, and show Rust where to find an item in the module
 
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-11

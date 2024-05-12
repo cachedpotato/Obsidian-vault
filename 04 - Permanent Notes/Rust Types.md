@@ -1,9 +1,8 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
-## Notable types
+## Common types
 1) Tuples
 ```rust
 let tup: (i32, u8, char) = (-3, 5, 'a');
@@ -26,11 +25,7 @@ println!("first element: {a[1]}");
 //invalid indexes will give RUNTIME error
 ```
 
-3) [[String]] 
-
-4) [[Enum]]
-
-5) usize
+3) usize
 usize is an unsigned integer with a "dynamic" size that differs by the architecture of the computer. for x86_64 it's going to be u32, for aarch_64 it's going to be u64, etc.
 ```rust
 let u: usize = 9;
@@ -38,14 +33,14 @@ let u: usize = 9;
 let u2: u32 = 9; 
 ```
 
-6) byte literal
+4) byte literal
 ```rust
 let bs: 
 let s = b' ' //byte literal of whitespace
 
 ```
 
-7) slice type
+5) slice type
 ``` rust
 let a: [u8;5] = [1, 2, 3, 4, 5];
 let slice = &a[1..4];
@@ -53,9 +48,21 @@ assert_eq!(slice, &[2, 3, 4]);
 ```
 slices are a reference to a preexisting array. slice types, as seen in the representation, **IS NOT MUTABLE**. think of string literal, which is also a type of slice.
 
-8) [[Structs]]
+## Types with multiple values
+
+6) [[Enum]]
+
+7) [[Structs]]
+
+## Collections
+Collections can contain multiple values. Unlike the built-in array and tuple types, these are stored in the [[Heap]]. Common collections include:
+- [[String in Rust]]
+- [[Vector in Rust|Vector]]
+- [[Hash Map in Rust|Hash Map]]
 
 
-## References
 
+---
+Categories: [[Rust]], [[Data Types]]
+References:
 Created: 2024-05-09

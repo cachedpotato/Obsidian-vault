@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 ## What even are references?
 
@@ -70,6 +69,7 @@ fn dangler() -> &String {
 }
 ```
 
-## References
-
+---
+Categories: [[Rust]] 
+References:
 Created: 2024-05-10

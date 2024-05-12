@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Types of error Handling
 
@@ -36,4 +35,5 @@ fn main() {
 ```
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-09

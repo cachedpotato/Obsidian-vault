@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Structs
 at first glance structs use the same as structs in any other functional language:
@@ -83,6 +82,8 @@ fn main() {
 	dbg!(&rect);
 }
 ```
-## References
 
+---
+Categories: [[Rust]], [[Data Types]]
+References:
 Created: 2024-05-10

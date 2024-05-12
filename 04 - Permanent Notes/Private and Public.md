@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Private and Public
 by default, all mods and its code is private. you must specify what should be public with the ```pub``` keyword.
@@ -84,4 +83,5 @@ pub fn eat_at_restaurant() {
 Nota that back_of_house is NOT set to public, but eat_at_restaurant() can still use the Appetizer enum, as that one IS public.
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-11

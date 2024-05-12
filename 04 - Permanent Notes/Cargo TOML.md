@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 Rust manages package dependencies with cargo.toml. A few syntax to note:
 ```toml
@@ -12,4 +11,5 @@ the two are the same thing. Carrot sign implies the version must be higher than 
 
 ## References
 
+categories: [[Rust]]
 Created: 2024-05-09

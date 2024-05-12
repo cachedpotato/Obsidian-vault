@@ -1,7 +1,6 @@
 ---
 tags:
   - Rust
-links: "[[Rust]]"
 ---
 # Enum
 enum is a type that can be one of a given set of types. types within enum can be pretty much anything.
@@ -60,8 +59,8 @@ enum Result<T> {
 }
 ```
 
-If some function returns a result, it's best practice to do [[Error Handling]], which is basically taking care of error cases.
+If some function returns a result, it's best practice to do [[Error Handling in Rust]], which is basically taking care of error cases.
 
 
-
+categories: [[Rust]], [[Data Types]]
 Created: 2024-05-09
