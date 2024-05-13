@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f6ec4c1e256aa085",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -86,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Error Handling in Rust.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +111,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Error Handling in Rust.md",
+                "file": "Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Error Handling in Rust.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -161,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Error Handling in Rust.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,12 +203,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "94856175cceb8de1",
+  "active": "f6ec4c1e256aa085",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Enum.md",
     "04 - Permanent Notes/Error Handling in Rust.md",
-    "Hash Map in Rust.md",
-    "Vector in Rust.md",
+    "Untitled.md",
+    "04 - Permanent Notes/Hash Map in Rust.md",
+    "04 - Permanent Notes/Vector in Rust.md",
+    "04 - Permanent Notes/Enum.md",
     "04 - Permanent Notes/String in Rust.md",
     "04 - Permanent Notes/Rust Types.md",
     "04 - Permanent Notes/Ownership in Rust.md",
@@ -217,7 +231,6 @@
     "04 - Permanent Notes/Maximum Mean Discrepancy.md",
     "04 - Permanent Notes/Cargo Basics.md",
     "04 - Permanent Notes/Implementation.md",
-    "04 - Permanent Notes/Hilbert Space.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"

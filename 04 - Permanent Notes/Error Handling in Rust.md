@@ -34,6 +34,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
 run with ```RUST_BACKTRACE=1 cargo run``` to see the full backtrace.
+Because panicking crashes your program, you should use it wisely. A good situation to use ```panic!``` would be cases where continuing the program would put it or even your computer in jeopardy. 
 
 ## Recoverable Error - Result
 We've briefly looked at the Result [[Enum]] before, but let's go a bit deeper. Result enum have two variants: Ok() and Err(). We can do pattern matching with ```match``` for error handling, like so:
@@ -74,6 +75,26 @@ fn main() {
 ```
 Reminder that you can name the default case for match
 
+## Custom Types for Error handling
+Sometimes we encounter cases where a certain variable **MUST** meet several conditions, which are not possible by using the primary types alone. For example, we may want a variable to be of size between 1 and 100. Whenever this variable this gets passed to a function, we need to take care of cases where the variable goes out of range. This can be cumbersome.
+
+What we can do, then, is to create a new type, either with struct or enum, and put limitations there.
+```rust
+struct Guess {
+	value: i32,
+}
+impl Guess {
+	pub fn new(value: i32) -> Guess {
+		if value < 1 || value > 100 {panic!("Guess out of range");}
+		Guess{ value }
+	}
+
+	pub fn value(&self) -> i32 {
+		self.value
+	}
+}
+```
+
 ## Functions/methods related to Error handling
 ### expect
 ```rust
@@ -85,7 +106,16 @@ fn main() {
 		.expect("yo that ain't a number");
 }
 ```
-it's better to use expect() than do nothing, but in will panic if an error occurs. Use this for super simple stuff.
+it's better to use expect() than do nothing, but in will panic if an error occurs. Use this for super simple stuff or for testing.
+
+### unwrap
+```rust
+fn main() {
+	//some code regarding vectors....
+	let n: String = v.get(100).clone().unwrap();
+}
+```
+unwrap is for... well, unwrapping values inside a wrapper. For example, if you unwrap an ```Option<T>```, you'd get T on successful attempt. the code will panic if said Option is None. Similar to expect, this can be used for testing.
 ### ?
 ```rust
 ```
