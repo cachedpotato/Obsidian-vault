@@ -53,9 +53,9 @@ Option takes care of the "billion dollar mistake", which is the null value, or l
 ### Result
 Result is an enum with 2 types:
 ```rust
-enum Result<T> {
+enum Result<T, E> {
   Ok(T),
-  Err,
+  Err(E),
 }
 ```
 

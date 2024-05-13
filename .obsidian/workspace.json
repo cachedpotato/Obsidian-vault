@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hash Map in Rust.md",
+                "file": "04 - Permanent Notes/Error Handling in Rust.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hash Map in Rust.md",
+                "file": "04 - Permanent Notes/Error Handling in Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Hash Map in Rust.md",
+                "file": "04 - Permanent Notes/Error Handling in Rust.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0000000000000004,
+                  "scale": 0.7132754626224428,
                   "close": true
                 }
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hash Map in Rust.md"
+                "file": "04 - Permanent Notes/Error Handling in Rust.md"
               }
             }
           }
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hash Map in Rust.md",
+                "file": "04 - Permanent Notes/Error Handling in Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,10 +192,12 @@
   },
   "active": "94856175cceb8de1",
   "lastOpenFiles": [
+    "04 - Permanent Notes/Enum.md",
+    "04 - Permanent Notes/Error Handling in Rust.md",
     "Hash Map in Rust.md",
-    "04 - Permanent Notes/Rust Types.md",
     "Vector in Rust.md",
     "04 - Permanent Notes/String in Rust.md",
+    "04 - Permanent Notes/Rust Types.md",
     "04 - Permanent Notes/Ownership in Rust.md",
     "04 - Permanent Notes/Pattern Matching.md",
     "04 - Permanent Notes/Factor Analysis.md",
@@ -206,11 +208,9 @@
     "04 - Permanent Notes/Module System.md",
     "04 - Permanent Notes/Modules.md",
     "04 - Permanent Notes/Private and Public.md",
-    "04 - Permanent Notes/Enum.md",
     "Templates/Default Template.md",
     "04 - Permanent Notes/Paths.md",
     "04 - Permanent Notes/Cargo TOML.md",
-    "04 - Permanent Notes/Error Handling in Rust.md",
     "04 - Permanent Notes/Use.md",
     "04 - Permanent Notes/Reproducing Kernel Hilbert Space.md",
     "04 - Permanent Notes/Representor Theorem.md",
