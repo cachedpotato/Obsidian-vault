@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "04 - Permanent Notes/The 12 Principles of Animation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "735a2c36f3ce8d81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Walk Cycle Animation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "34f02679efecf2a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Basic Animation Flow.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -99,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "04 - Permanent Notes/Basic Animation Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Untitled.md",
+                "file": "04 - Permanent Notes/Basic Animation Flow.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -157,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "04 - Permanent Notes/Basic Animation Flow.md"
               }
             }
           }
@@ -174,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "04 - Permanent Notes/Basic Animation Flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,10 +227,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f6ec4c1e256aa085",
+  "active": "34f02679efecf2a8",
   "lastOpenFiles": [
+    "04 - Permanent Notes/Basic Animation Flow.md",
     "04 - Permanent Notes/Error Handling in Rust.md",
-    "Untitled.md",
+    "04 - Permanent Notes/The 12 Principles of Animation.md",
+    "04 - Permanent Notes/Walk Cycle Animation.md",
+    "0471f06808f14fe12511513c531ac67070eaf122_hq-2944681246.jpg",
     "04 - Permanent Notes/Hash Map in Rust.md",
     "04 - Permanent Notes/Vector in Rust.md",
     "04 - Permanent Notes/Enum.md",
@@ -228,9 +255,6 @@
     "04 - Permanent Notes/Use.md",
     "04 - Permanent Notes/Reproducing Kernel Hilbert Space.md",
     "04 - Permanent Notes/Representor Theorem.md",
-    "04 - Permanent Notes/Maximum Mean Discrepancy.md",
-    "04 - Permanent Notes/Cargo Basics.md",
-    "04 - Permanent Notes/Implementation.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"

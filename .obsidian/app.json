@@ -2,5 +2,6 @@
   "showLineNumber": true,
   "vimMode": true,
   "tabSize": 2,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current"
 }
