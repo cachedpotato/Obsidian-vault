@@ -1,6 +1,6 @@
 ---
 tags: 
-parent: "[[Rust]]"
+parent:
 ---
 # Implementation
 all functions within the implementation box is called associated function.
@@ -29,6 +29,7 @@ impl Rectangle {
 }
 ```
 
-## References
-
+---
+Categories: [[Rust]]
+Reference: 
 Created: 2024-05-11

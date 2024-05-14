@@ -3,5 +3,6 @@
   "vimMode": true,
   "tabSize": 2,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "attachmentFolderPath": "Attachments"
 }

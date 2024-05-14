@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Permanent Notes/Error Handling in Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f6ec4c1e256aa085",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/The 12 Principles of Animation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "735a2c36f3ce8d81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Walk Cycle Animation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34f02679efecf2a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Basic Animation Flow.md",
+                "file": "04 - Permanent Notes/Implementation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -123,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Basic Animation Flow.md",
+                "file": "04 - Permanent Notes/Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +98,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Basic Animation Flow.md",
+                "file": "04 - Permanent Notes/Implementation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Basic Animation Flow.md"
+                "file": "04 - Permanent Notes/Implementation.md"
               }
             }
           }
@@ -198,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Basic Animation Flow.md",
+                "file": "04 - Permanent Notes/Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449
+    "width": 419
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,13 +190,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "34f02679efecf2a8",
+  "active": "94856175cceb8de1",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Basic Animation Flow.md",
+    "05  - Archive/Placeholder.md",
+    "02 - Projects/Test.md",
     "04 - Permanent Notes/Error Handling in Rust.md",
+    "05  - Archive",
+    "02 - Projects",
+    "04 - Permanent Notes/Basic Animation Flow.md",
     "04 - Permanent Notes/The 12 Principles of Animation.md",
     "04 - Permanent Notes/Walk Cycle Animation.md",
-    "0471f06808f14fe12511513c531ac67070eaf122_hq-2944681246.jpg",
+    "Attachments/0471f06808f14fe12511513c531ac67070eaf122_hq-2944681246.jpg",
     "04 - Permanent Notes/Hash Map in Rust.md",
     "04 - Permanent Notes/Vector in Rust.md",
     "04 - Permanent Notes/Enum.md",
@@ -254,7 +221,6 @@
     "04 - Permanent Notes/Cargo TOML.md",
     "04 - Permanent Notes/Use.md",
     "04 - Permanent Notes/Reproducing Kernel Hilbert Space.md",
-    "04 - Permanent Notes/Representor Theorem.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"
