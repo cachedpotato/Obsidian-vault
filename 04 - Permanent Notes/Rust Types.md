@@ -60,6 +60,16 @@ Collections can contain multiple values. Unlike the built-in array and tuple typ
 - [[Vector in Rust|Vector]]
 - [[Hash Map in Rust|Hash Map]]
 
+## Generic Types
+More often than not, we encounter situations where it's best to make a function that does the same job, just with different types. Because it's cumbersome to create functions for each type case, we're better off using [[Generics in Rust|generic types]]. Rust's compiler is pretty smart, so we won't take any hits on performance as well!
+
+```rust
+fn genericfunc<T> (n: T) -> T {
+	let y:T = n;
+	y
+}
+```
+
 
 
 ---

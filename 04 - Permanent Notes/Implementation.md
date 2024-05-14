@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - Rust
 parent:
 ---
 # Implementation
