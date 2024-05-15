@@ -28,7 +28,7 @@ mod tests {
 	}
 }
 ```
-the ```#[cfg(test)]``` indicates modules with this attribute will compile and run _ONLY WHEN YOU RUN CARGO TEST_. cargo build won't compile this module.
+the ```#[cfg(test)]``` indicates modules with this attribute will compile and run _ONLY WHEN YOU RUN CARGO TEST_. cargo build won't compile this module. 
 
 the ```assert``` family of macros will panic if it gets an unexpected result. For example, if this add function returned a 5, the test will panic. To actually test, you need to do ```cargo test```. 
 

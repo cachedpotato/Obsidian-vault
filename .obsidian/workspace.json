@@ -8,7 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "990144180d6d3a82",
+            "id": "ab1db0fbc46dfb3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Closure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "171ee76f7ed254d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Fn Traits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "719570aab5c5a260",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,36 +44,12 @@
             }
           },
           {
-            "id": "3e22b9c94a902265",
+            "id": "a779b35010b88a21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Permanent Notes/Generics in Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbf14b681204537e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Testing in Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a7477604b4098f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Controlling Tests in Rust.md",
+                "file": "04 - Permanent Notes/Iterators in Rust.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Controlling Tests in Rust.md",
+                "file": "04 - Permanent Notes/Iterators in Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Controlling Tests in Rust.md",
+                "file": "04 - Permanent Notes/Iterators in Rust.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0000000000000022,
+                  "scale": 1.0000000000000038,
                   "close": true
                 }
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Controlling Tests in Rust.md"
+                "file": "04 - Permanent Notes/Iterators in Rust.md"
               }
             }
           }
@@ -198,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Controlling Tests in Rust.md",
+                "file": "04 - Permanent Notes/Iterators in Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,12 +228,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2a7477604b4098f8",
+  "active": "a779b35010b88a21",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Testing in Rust.md",
-    "04 - Permanent Notes/Generics in Rust.md",
-    "04 - Permanent Notes/Controlling Tests in Rust.md",
+    "04 - Permanent Notes/Closure.md",
+    "04 - Permanent Notes/Iterators in Rust.md",
     "04 - Permanent Notes/Traits in Rust.md",
+    "04 - Permanent Notes/Fn Traits.md",
+    "04 - Permanent Notes/Hash Map in Rust.md",
+    "04 - Permanent Notes/Congestion Control.md",
+    "04 - Permanent Notes/TCP.md",
+    "04 - Permanent Notes/UDP.md",
+    "04 - Permanent Notes/Testing in Rust.md",
+    "00 - MoC/Rust.md",
+    "00 - MoC/Programming Language.md",
+    "04 - Permanent Notes/Test Driven Development.md",
+    "04 - Permanent Notes/Refactoring.md",
+    "04 - Permanent Notes/Generics in Rust.md",
+    "04 - Permanent Notes/Error Handling in Rust.md",
+    "04 - Permanent Notes/Unwrap.md",
+    "04 - Permanent Notes/Controlling Tests in Rust.md",
     "04 - Permanent Notes/Test Organization.md",
     "04 - Permanent Notes/Lifetimes.md",
     "04 - Permanent Notes/Implementation.md",
@@ -243,22 +256,9 @@
     "04 - Permanent Notes/Paths.md",
     "04 - Permanent Notes/Rust Types.md",
     "05  - Archive/Placeholder.md",
-    "02 - Projects/Test.md",
-    "04 - Permanent Notes/Error Handling in Rust.md",
     "05  - Archive",
     "02 - Projects",
-    "04 - Permanent Notes/Basic Animation Flow.md",
-    "04 - Permanent Notes/The 12 Principles of Animation.md",
-    "04 - Permanent Notes/Walk Cycle Animation.md",
     "Attachments/0471f06808f14fe12511513c531ac67070eaf122_hq-2944681246.jpg",
-    "04 - Permanent Notes/Hash Map in Rust.md",
-    "04 - Permanent Notes/Vector in Rust.md",
-    "04 - Permanent Notes/Enum.md",
-    "04 - Permanent Notes/String in Rust.md",
-    "04 - Permanent Notes/Ownership in Rust.md",
-    "04 - Permanent Notes/Pattern Matching.md",
-    "04 - Permanent Notes/Factor Analysis.md",
-    "00 - MoC/Rust.md",
     "05 - Archive",
     "02 - Projects",
     "00 - MoC"

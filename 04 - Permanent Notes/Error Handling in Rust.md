@@ -108,19 +108,20 @@ fn main() {
 ```
 it's better to use expect() than do nothing, but in will panic if an error occurs. Use this for super simple stuff or for testing.
 
-### unwrap
-```rust
-fn main() {
-	//some code regarding vectors....
-	let n: String = v.get(100).clone().unwrap();
-}
-```
-unwrap is for... well, unwrapping values inside a wrapper. For example, if you unwrap an ```Option<T>```, you'd get T on successful attempt. the code will panic if said Option is None. Similar to expect, this can be used for testing.
+## [[Unwrap]] family of functions
+Because Rust's most defining features include Options and Result, which are both wrapper enums, Rust provides a plethora of functions that deal with wrapping/unwrapping of such values. 
+
 ### ?
 ```rust
+use std::error::Error;
+fn run(x: Config) -> Result<(), Box<dyn Error>> {
+	//snip
+	let test: String = x.stuff_that_returns_Result()?;
+}
 ```
+In this case, the ? operator will return the exit the run function with Err variant as output upon failure. Note that to use ? we need to have the function return Result with Err variant having the ```Error``` trait.
 
 ---
-Categories: [[Rust]]
+Categories: [[Rust]], [[Debug]] 
 References: 
 Created: 2024-05-09
