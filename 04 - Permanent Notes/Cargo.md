@@ -23,6 +23,13 @@ once you make a crate, or want to download a package, you can use [[Crates.io]].
 ## Cargo Workspace
 As your project gets bigger, you may want to split your package not just into modules, but into separate crates, and merge them all into one later. Cargo offers a feature called [[Cargo Workspace|workspace]] that does just that. This way multiple packages related to a single project can be developed in tandem.
 
+## Cargo install
+to install binaries in crates.io, get its name and simply do the following:
+``` bash 
+cargo install [name]
+```
+
+
 
 
 ---

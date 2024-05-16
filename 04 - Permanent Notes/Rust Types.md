@@ -70,8 +70,6 @@ fn genericfunc<T> (n: T) -> T {
 }
 ```
 
-
-
 ---
 Categories: [[Rust]], [[Data Types]]
 References:
