@@ -79,6 +79,9 @@ fn function2() -> iResult<()> {}
 - if two modules share the same name, use as to create alias
 
 ## Re-exporting with pub use
+
+^494caa
+
 to bring an item into scope and also make that item available for others, we can use ```pub use```.
 ```rust
 mod front_of_house {

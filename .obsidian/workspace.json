@@ -4,52 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "5dee1b99deb2a8b7",
+        "id": "cedabbca78d996d2",
         "type": "tabs",
         "children": [
           {
-            "id": "ab1db0fbc46dfb3c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Closure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "171ee76f7ed254d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "719570aab5c5a260",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Traits in Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a779b35010b88a21",
+            "id": "77431a03be50dedd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "04 - Permanent Notes/Iterators in Rust.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "166fe3b472e19e46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Cargo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2eda27deff432db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Cargo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7422096fd9d6f4c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Permanent Notes/Cargo Workspace.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Iterators in Rust.md",
+                "file": "04 - Permanent Notes/Cargo Workspace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Iterators in Rust.md",
+                "file": "04 - Permanent Notes/Cargo Workspace.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.0000000000000038,
+                  "scale": 0.7132754626224449,
                   "close": true
                 }
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Iterators in Rust.md"
+                "file": "04 - Permanent Notes/Cargo Workspace.md"
               }
             }
           }
@@ -198,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Iterators in Rust.md",
+                "file": "04 - Permanent Notes/Cargo Workspace.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,12 +228,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a779b35010b88a21",
+  "active": "7422096fd9d6f4c3",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Closure.md",
     "04 - Permanent Notes/Iterators in Rust.md",
-    "04 - Permanent Notes/Traits in Rust.md",
+    "04 - Permanent Notes/Cargo.md",
+    "04 - Permanent Notes/Cargo Workspace.md",
+    "04 - Permanent Notes/Crates.io.md",
+    "04 - Permanent Notes/Crate Documentation.md",
+    "04 - Permanent Notes/Use.md",
+    "Attachments/trpl14-01.png",
+    "04 - Permanent Notes/Variable vs Type mutability.md",
     "04 - Permanent Notes/Fn Traits.md",
+    "04 - Permanent Notes/Closure.md",
+    "04 - Permanent Notes/Traits in Rust.md",
     "04 - Permanent Notes/Hash Map in Rust.md",
     "04 - Permanent Notes/Congestion Control.md",
     "04 - Permanent Notes/TCP.md",
@@ -250,12 +257,6 @@
     "04 - Permanent Notes/Test Organization.md",
     "04 - Permanent Notes/Lifetimes.md",
     "04 - Permanent Notes/Implementation.md",
-    "04 - Permanent Notes/Use.md",
-    "04 - Permanent Notes/Modules.md",
-    "04 - Permanent Notes/Module System.md",
-    "04 - Permanent Notes/Paths.md",
-    "04 - Permanent Notes/Rust Types.md",
-    "05  - Archive/Placeholder.md",
     "05  - Archive",
     "02 - Projects",
     "Attachments/0471f06808f14fe12511513c531ac67070eaf122_hq-2944681246.jpg",

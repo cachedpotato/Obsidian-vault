@@ -83,6 +83,30 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
 }
 ```
 
+## loops vs iterators
+The age-old question: which is better?
+loop is:
+- Slightly slower
+- Is NOT functional
+- Easier to understand/debug
+
+iterator is:
+- slightly faster
+- FUNCTIONAL BOIS (NO LOOPS! hopefully)
+- Harder to get used to/debug
+
+they all have their own strengths and weaknesses, but if you're going for a more functional approach, it's best to use iterators. so instead of for and while, use stuff like:
+
+``` rust
+a.iter() //iterator
+	.map(|x| ...) //mapping (iterator adaptor)
+	.filter(|&x, &y|...) //filtering
+	.map()...
+	.filter()...
+	.collect() //consuming adaptor (add())
+```
+
+
 
 ---
 Categories: [[Rust]]

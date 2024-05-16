@@ -14,7 +14,7 @@ cargo run //for creating and running executable
 ```
 
 a crate can be thought of as a project folder.
-- cargo.lock stores version info of rust, dependencies, etc. This is to ensure easy reproducibility.
+- cargo.lock stores version info of rust, dependencies, etc. This is to ensure easy reproducibility. ^85589b
 - [[Cargo TOML |cargo.toml]] stores dependencies
 
 ### Cargo build
