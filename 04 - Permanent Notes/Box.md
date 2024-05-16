@@ -11,7 +11,7 @@ You may want to use Boxes in the following situations:
 - when you want to own a value but only care for the trait it implements
 
 ## Recursive types
-recursive types are types that calls itself, hence the recursion.
+recursive types are types that has itself as the component.
 ``` rust
 enum List {
 	Cons(i32, List),
@@ -24,11 +24,13 @@ let it_doesnt_work: List = Cons(1, Cons(2, Cons(3, Nil)));
 ```
 If we try to compile, the compile throws an error stating that ```the recursive type List has infinite size```. In fact, the very definition of List is the root of the problem. Why does this happen?
 
-The compiler will need to allocate a certain size in stack/heap depending on the user preference. in this case the compiler knows that it should compile type of Cons and Nil. However, we are now in an infinite loop:
-- the memory of Cons should be the same as List + Nil
-- to view how much List use, the compiler looks for cases where the variable List is used, in this case, it's yet another Cons.
-- Repeat until the head-death of the sun
-![[trpl15-01.svg]]
+The compiler needs to know how much memory is needed to store a variable. for enums, where only one variant is used, the compiler tries to find the maximum amount of space needed for any of the variants. in other words,
+$$
+memory = max
+$$
+
+
+![[trpl15-01.svg|500]]
 As you can see the compiler must run infinitely, which leads into infinite memory usage error. Other than raising error, the compiler also recommends changing the Cons structure to this:
 ``` rust
 Cons(i32, Box<List>)
@@ -38,7 +40,6 @@ This is called indirection, which is changing the data structure to stop the val
 
 Now, instead of Cons being recursive, Cons is actually just a tuple with a number and a pointer that points to where to List is located in. Also, because in the stack only the pointer is stored, Rust knows exactly how much space is being used.
 ![[trpl15-02.svg]]
-
 
 
 
