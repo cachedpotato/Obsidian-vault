@@ -206,8 +206,8 @@
   },
   "active": "f4c18f7d6201da78",
   "lastOpenFiles": [
-    "04 - Permanent Notes/Rc.md",
     "04 - Permanent Notes/RefCell.md",
+    "04 - Permanent Notes/Rc.md",
     "04 - Permanent Notes/Smart Pointer.md",
     "04 - Permanent Notes/Traits in Rust.md",
     "04 - Permanent Notes/The Deref Trait.md",
