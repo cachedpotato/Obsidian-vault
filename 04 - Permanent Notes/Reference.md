@@ -9,12 +9,12 @@ you CAN use references for values stored in the stack, but more often than not y
 
 ```rust
 fn main() {
-  let s:string = string::from("hello");
+  let s: String = String::from("hello");
   nom(s);
   //println!("{s}") <- won't work because it's used
 }
 
-fn nom(s: string) {
+fn nom(s: String) {
     println!("i ate {s}");
 }
 ```
@@ -25,7 +25,7 @@ if a value is taken as a function argument, than **THE FUNCTION WILL TAKE OWNERS
 fn main() {
   let s:String = string::from("hello");
   nom_but_not_really(&s);
-  println!("{s}") //this will work now
+  println!("{s}")//this will work now
 				  //because we passed the reference,
 				  //not the actual variable
 }
@@ -35,7 +35,8 @@ fn nom_but_not_really(s: &String) {
 }
 ```
 
-There are also rules for references
+## Rules of References
+There are also rules for references:
 - One can have as many immutable reference as they want
 - One can only have one mutable reference
 - One must not have both mutable & immutable reference at the same time
@@ -59,6 +60,36 @@ fn ref_eat(_r1: &String, _r2: &String) {
 }
 ```
 
+
+## References and printing
+Normally, for languages like C/C++, if you try to print a pointer variable it will return the address:
+``` C
+int a = 3;
+int* b = &a;
+printf("{}", b); //gives address of b
+```
+
+However, in Rust, we don't get an address, but the value:
+``` rust
+let a: i32 = 3;
+let b: &i32 = &a;
+println!("{b}") //prints 3
+```
+
+to get the address of b, use the ```{:p}``` formatter:
+``` rust
+let a: i32 = 3;
+let b: &i32 = &a;
+println!("{:p}", b) //prints address of b
+```
+It's also worth noting that println! takes a reference of b, so regular mutation rules apply, meaning stuff like this is not possible:
+``` rust
+let a: i32 = 3;
+let b: &mut i32 = &mut a;
+println!("Imma print a: {a}"); //compile-time error
+println!("This works tho: {b}"); //3
+```
+The first ```println!``` does not work because we're trying to pass a new immutable reference of a, when b, a mutable reference, already exist. However, because of how printing works in Rust, we can simply print b to print the value of a.
 ## Dangling Reference
 A dangling reference is a reference that points to a blank space in heap. This can lead to memory safety issues. Make sure you don't have a dangling reference, though the compiler won't even compile if you have one.
 ```rust
@@ -68,6 +99,11 @@ fn dangler() -> &String {
 	&s //passing dangling reference as the output
 }
 ```
+
+## Reference related errors
+Because of Rust's unique borrow checker, references can be hard to get used to. Here are some errors related to References that might be confusing at first.
+- [[Rust Error E0716]]: Temporary value dropped while borrowed
+- [[Rust Error E0506]]: Cannot assign to x because it is borrowed
 
 ---
 Categories: [[Rust]] 
