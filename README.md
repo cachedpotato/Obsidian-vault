@@ -6,7 +6,7 @@ tags:
 
 Hello there,
 
-Welcome to my obsidian vault! It's only been... idk 3 days since I started using this app, but I'm having a lot of fun.
+Welcome to my obsidian vault! There isn't much to look at but I hope you enjoy your short stay here.
 
 I wasn't really into proper notetaking, as much as I enjoy learning new stuff on a very surface level I normally just forget what I've just learned and move on, but one day I thought "you know what? maybe I should really start organizing my notes. It _MIGHT_ come in handy later on.", and here we are.
 
