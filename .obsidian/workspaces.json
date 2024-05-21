@@ -2,41 +2,36 @@
   "workspaces": {
     "Default Layout": {
       "main": {
-        "id": "b27c50401e9fde79",
+        "id": "5a721acc0d8b1c82",
         "type": "split",
         "children": [
           {
-            "id": "5dee1b99deb2a8b7",
+            "id": "80d0c29d61cc9b6f",
             "type": "tabs",
             "children": [
               {
-                "id": "94856175cceb8de1",
+                "id": "b293ea8b78afb7b1",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "README.md",
-                    "mode": "source",
-                    "source": false
-                  }
+                  "type": "empty",
+                  "state": {}
                 }
               }
-            ],
-            "stacked": true
+            ]
           }
         ],
         "direction": "vertical"
       },
       "left": {
-        "id": "bd765787cf57d85b",
+        "id": "f2ee0e654760f743",
         "type": "split",
         "children": [
           {
-            "id": "6aa2df3533542e3f",
+            "id": "8e954e379b60ff70",
             "type": "tabs",
             "children": [
               {
-                "id": "eeabe2e5839d1295",
+                "id": "460df0db248a062d",
                 "type": "leaf",
                 "state": {
                   "type": "file-explorer",
@@ -46,7 +41,7 @@
                 }
               },
               {
-                "id": "357cd60cb162a988",
+                "id": "39365fa403efaf7a",
                 "type": "leaf",
                 "state": {
                   "type": "search",
@@ -61,7 +56,7 @@
                 }
               },
               {
-                "id": "cc1531e88155fad9",
+                "id": "e18d03594330205e",
                 "type": "leaf",
                 "state": {
                   "type": "bookmarks",
@@ -75,62 +70,42 @@
         "width": 300
       },
       "right": {
-        "id": "9bdf448cfdb94b53",
+        "id": "bc17cfbf6a229565",
         "type": "split",
         "children": [
           {
-            "id": "e2a4e3d0c35f27d9",
+            "id": "245d7a2ef56a07e0",
             "type": "tabs",
             "children": [
               {
-                "id": "2265cc5436cf6343",
+                "id": "fc90c2843a34b504",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "53e58d2e20601609",
                 "type": "leaf",
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "README.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
                 }
               },
               {
-                "id": "2431e5ae0ba66e7b",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "README.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 0.7132754626224428,
-                      "close": true
-                    }
-                  }
-                }
-              },
-              {
-                "id": "34e120f03e3e2f31",
+                "id": "f88e6fc540e2bc04",
                 "type": "leaf",
                 "state": {
                   "type": "tag",
@@ -141,60 +116,35 @@
                 }
               },
               {
-                "id": "f76c0c577e21d11e",
+                "id": "92de2743f2f8415d",
                 "type": "leaf",
                 "state": {
                   "type": "outline",
-                  "state": {
-                    "file": "README.md"
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "b3931cb653dca400",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ba07a3c8caf510e0",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "README.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
+                  "state": {}
                 }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 419
+        "width": 300,
+        "collapsed": true
       },
       "left-ribbon": {
         "hiddenItems": {
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
           "switcher:Open quick switcher": false,
           "graph:Open graph view": false,
           "canvas:Create new canvas": false,
           "daily-notes:Open today's daily note": false,
           "templates:Insert template": false,
           "command-palette:Open command palette": false,
-          "obsidian-excalidraw-plugin:Create new drawing": false,
-          "table-editor-obsidian:Advanced Tables Toolbar": false,
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "94856175cceb8de1",
-      "mtime": "2024-05-20T08:53:24+09:00"
+      "active": "b293ea8b78afb7b1",
+      "mtime": "2024-05-21T09:10:51+09:00"
     }
   },
   "active": "Default Layout"
