@@ -33,7 +33,8 @@ where $[K_{ab}]_{ij}$ is the Gram matrix, and $Tr()$ is a trace function.
 It is also important to note that the mean $\mu_x$ itself is called a mean embedding, and in RHKS, this is actually the probability distribution p! Which makes sense, since this whole time we were trying to find, essentially, $||p-q||_{H}$ .
 
 
-## References
+---
+Categories: [[Statistics]]
+References:
 https://jmlr.csail.mit.edu/papers/v13/gretton12a.html
-
 Created: 2024-05-01

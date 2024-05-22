@@ -51,5 +51,9 @@ Types of DTL:
 - One-shot Learning: Inferring required output based on a few training examples.
 - Zero-shot Learning: No labeled examples to learn a task. This can be interpreted as learning three variables, $P(y | x, T)$ 
 
-Reference: https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
+
+---
+Categories: [[Deep Learning]]
+References: 
+https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
 

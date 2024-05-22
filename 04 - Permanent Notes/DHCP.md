@@ -30,4 +30,5 @@ Some things of note:
 https://www.youtube.com/watch?v=WztEbO0uiiQ
 https://www.youtube.com/watch?v=e6-TaH5bkjo
 
+Categories: [[Computer Network]]
 Created: 2024-05-03

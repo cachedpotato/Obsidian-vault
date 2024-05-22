@@ -27,5 +27,6 @@ Reminder that $J_{NNs}$ is for source data ONLY. We are using the knowledge of t
 
 Minimizing the NN part of this function is easy, but for MMD, it depends on what [[Kernel Method]] we are using. Normally Gaussian Kernel is recommended as it's the most well-documented.
 
-
+---
+Categories: [[Deep Learning]]
 Reference: 

@@ -6,18 +6,36 @@
         "type": "split",
         "children": [
           {
-            "id": "80d0c29d61cc9b6f",
+            "id": "7cd9d43c138f427d",
             "type": "tabs",
             "children": [
               {
-                "id": "b293ea8b78afb7b1",
+                "id": "47293dab3e502106",
                 "type": "leaf",
                 "state": {
-                  "type": "empty",
-                  "state": {}
+                  "type": "markdown",
+                  "state": {
+                    "file": "04 - Permanent Notes/Silhouette Coefficient.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "854dc3510e389809",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "04 - Permanent Notes/Untitled.md",
+                    "mode": "source",
+                    "source": false
+                  }
                 }
               }
-            ]
+            ],
+            "currentTab": 1,
+            "stacked": true
           }
         ],
         "direction": "vertical"
@@ -78,18 +96,37 @@
             "type": "tabs",
             "children": [
               {
-                "id": "fc90c2843a34b504",
+                "id": "9de4e7b052ca56b2",
                 "type": "leaf",
                 "state": {
-                  "type": "backlink",
+                  "type": "localgraph",
                   "state": {
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
+                    "file": "04 - Permanent Notes/Untitled.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1.0000000000000018,
+                      "close": true
+                    }
                   }
                 }
               },
@@ -99,6 +136,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
+                    "file": "04 - Permanent Notes/Untitled.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -120,15 +158,39 @@
                 "type": "leaf",
                 "state": {
                   "type": "outline",
-                  "state": {}
+                  "state": {
+                    "file": "04 - Permanent Notes/Untitled.md"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "b4bdbe3b6b6ced14",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "fc90c2843a34b504",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "04 - Permanent Notes/Untitled.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
                 }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 371
       },
       "left-ribbon": {
         "hiddenItems": {
@@ -143,8 +205,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "b293ea8b78afb7b1",
-      "mtime": "2024-05-21T09:10:51+09:00"
+      "active": "854dc3510e389809",
+      "mtime": "2024-05-21T15:25:56+09:00"
     }
   },
   "active": "Default Layout"

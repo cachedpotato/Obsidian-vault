@@ -25,6 +25,8 @@ $$
 w^* = \sum_{i=1}^n \alpha_{i}K(x_{i}, .)
 $$
 which can cut down dimensions all the way down to $R^n$ from infinity.
-## References
 
+---
+Categories: [[Statistics]]
+References:
 Created: 2024-05-01

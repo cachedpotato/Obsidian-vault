@@ -1,3 +1,8 @@
+---
+tags:
+---
+
+# TCP
 Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It is often called TCP/IP because of its close connection to internet protocol. Unlike UDP which doesn't have innate error handling (checking if the packets have been received properly), TCP is reliable in that it provides ordered and error checked delivery. To establish connection, TCP must do what's called a 3-way handshake.
 ### TCP Segment Header
 ![[스크린샷 2024-05-07 094845.png]]
@@ -33,3 +38,8 @@ To make packet exchanges as reliable as possible, TCP/IP does what's called a [[
 Once transmission is complete TCP connection is terminated. the termination process is similar to the likes of TCP handshake used to initialize the connection.
 ![[EN-tcp-verbindungsabbau-4054690810 1.png]]
 The only difference is that FIN flag is set instead of SYN.
+
+
+---
+Categories: [[Computer Network]]
+References:

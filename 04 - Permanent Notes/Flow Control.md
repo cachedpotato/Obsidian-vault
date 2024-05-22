@@ -21,8 +21,9 @@ The basic flow is as follows. Suppose the buffer size for receiver is 2500.
 
 5) This process is repeated until it reaches the end of data transmission. TCP connection termination will commence.
 
-
-## References
+---
+Categories: [[Computer Network]]
+References:
 https://www.slideserve.com/aglaia/transport-layer-tcp-and-udp
 https://www.youtube.com/watch?v=4l2_BCr-bhw
 

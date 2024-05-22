@@ -18,6 +18,7 @@ K(x, y) = \langle \phi(x), \phi(y) \rangle
 $$
 This means, we can just compute using the inputs and some kernel function $K$ and not explicitly using the transformation function. We can then view the kernel function as a function that measures "similarity" between two points in the feature map space.
 
-## References
-
+---
+Categories: [[Machine Learning]], [[Statistics]]
+References:
 Created: 2024-05-01

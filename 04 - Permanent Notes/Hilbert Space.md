@@ -12,7 +12,8 @@ A simple Venn diagram representation of spaces:
 
 a Banach Space is a complete normed vector space (norm is defined)
 
-## References
+---
+Categories: [[Statistics]]
+References:
 https://en.wikipedia.org/wiki/Hilbert_space
-
 Created: 2024-05-01

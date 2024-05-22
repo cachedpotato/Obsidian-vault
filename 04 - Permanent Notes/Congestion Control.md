@@ -36,7 +36,9 @@ Fast recovery is the way in which congestion window gets increased after fast re
 
 While the overall mechanism of congestion control is universal, there are several algorithms to optimize bandwidth/minimize packet loss, etc. Examples include Reno, Vegas, CUBIC, etc.
 
-## References
+---
+Categories: [[Computer Network]]
+References:
 https://www.slideserve.com/eden-best/tcp-tutorial-part-ii
 https://courses.washington.edu/ee565/handouts/TCP_Fast_Retransmit_and_Recovery.pdf
 

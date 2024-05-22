@@ -79,7 +79,8 @@ K(x, y) & = \langle K_{x}, K_{y}\rangle_{H} \\
 $$
 Note that $K(x, .)$ takes x as **parameter** not a variable
 
-### References
+---
+Categories: [[Statistics]]
+References:
 https://www.youtube.com/watch?v=EoM_DF3VAO8
-
 Created: 2024-05-01
