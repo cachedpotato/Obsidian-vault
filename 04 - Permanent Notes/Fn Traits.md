@@ -28,7 +28,7 @@ Looking at the None case, we can see the closure takes nothing as input paramete
 
 ^148f86
 
-This is used when the closure _Mutates_ its environment. ```FnMut``` can also be called (more than) once meaning it has the definitions of ```FnMut``` inside itself. This is what we mean by closures implementing in an _additive_ fashion.
+This is used when the closure _Mutates_ its environment. ```FnMut``` can also be called (more than) once meaning it has the definitions of ```FnOnce``` inside itself. This is what we mean by closures implementing in an _additive_ fashion.
 
 ``` rust
 struct Rectangle {
