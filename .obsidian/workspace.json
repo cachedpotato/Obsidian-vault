@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "47293dab3e502106",
+            "id": "cb8892e6094460d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Permanent Notes/Community Detection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34f14795d15324fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Threads in Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc275fe780175e04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md",
+                "file": "04 - Permanent Notes/Trait Objects.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -111,7 +86,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md",
+                "file": "04 - Permanent Notes/Trait Objects.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -146,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md",
+                "file": "04 - Permanent Notes/Trait Objects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md"
+                "file": "04 - Permanent Notes/Trait Objects.md"
               }
             }
           }
@@ -185,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Permanent Notes/Fn Traits.md",
+                "file": "04 - Permanent Notes/Trait Objects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -215,11 +190,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cc275fe780175e04",
+  "active": "cb8892e6094460d6",
   "lastOpenFiles": [
+    "04 - Permanent Notes/Vector in Rust.md",
+    "04 - Permanent Notes/Enum.md",
+    "04 - Permanent Notes/Trait Objects.md",
+    "04 - Permanent Notes/Testing in Rust.md",
+    "04 - Permanent Notes/Controlling Tests in Rust.md",
+    "04 - Permanent Notes/The 12 Principles of Animation.md",
+    "04 - Permanent Notes/Walk Cycle Animation.md",
+    "Attachments/스크린샷 2024-05-23 121322.png",
+    "04 - Permanent Notes/Shared State Concurrency.md",
+    "04 - Permanent Notes/Basic Animation Flow.md",
+    "04 - Permanent Notes/Extensible Concurrency in Rust.md",
+    "04 - Permanent Notes/Traits in Rust.md",
+    "04 - Permanent Notes/Untitled.md",
+    "04 - Permanent Notes/Untitled 1.md",
+    "04 - Permanent Notes/Smart Pointer.md",
+    "04 - Permanent Notes/RefCell.md",
+    "04 - Permanent Notes/Arc.md",
     "04 - Permanent Notes/Closure.md",
-    "04 - Permanent Notes/Message Passing in Rust.md",
     "04 - Permanent Notes/Threads in Rust.md",
+    "04 - Permanent Notes/Fn Traits.md",
+    "04 - Permanent Notes/Message Passing in Rust.md",
     "04 - Permanent Notes/Community Detection.md",
     "04 - Permanent Notes/Silhouette Coefficient.md",
     "04 - Permanent Notes/Dimensionality Reduction.md",
@@ -229,23 +222,6 @@
     "Attachments/louvain-modularity-algorithm-2.png",
     "02 - Projects/Polyploidy scNOVA/scNOVA meeting 05212024.md",
     "02 - Projects/Polyploidy scNOVA",
-    "04 - Permanent Notes/Uniform Manifold Approximation and Projection.md",
-    "Untitled",
-    "04 - Permanent Notes/Factor Analysis.md",
-    "04 - Permanent Notes/Domain-Adversarial Neural Network.md",
-    "04 - Permanent Notes/factp.md",
-    "04 - Permanent Notes/Deep Transfer Learning.md",
-    "04 - Permanent Notes/Domain-Adaptive Neural Network.md",
-    "04 - Permanent Notes/Maximum Mean Discrepancy.md",
-    "04 - Permanent Notes/Reproducing Kernel Hilbert Space.md",
-    "04 - Permanent Notes/Representor Theorem.md",
-    "04 - Permanent Notes/Hilbert Space.md",
-    "04 - Permanent Notes/Kernel Method.md",
-    "04 - Permanent Notes/TCP.md",
-    "04 - Permanent Notes/Congestion Control.md",
-    "04 - Permanent Notes/Flow Control.md",
-    "04 - Permanent Notes/UDP.md",
-    "04 - Permanent Notes/DHCP.md",
-    "04 - Permanent Notes/Weak Count.md"
+    "Untitled"
   ]
 }

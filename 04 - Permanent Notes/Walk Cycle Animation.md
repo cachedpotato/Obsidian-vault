@@ -3,6 +3,7 @@ tags:
 ---
 # Walk Cycle Animation
 Walk cycle consists of mainly 5 key frames, repeated 2 times.
+![[스크린샷 2024-05-23 121322.png|600]]
 
 ## Contact 1
 Think of it as the starting frame of your walking animation. However the walk cycle ends, it must loop naturally back to contact 1. The head is at a neutral height.

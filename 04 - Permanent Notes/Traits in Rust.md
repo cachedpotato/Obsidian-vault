@@ -129,7 +129,7 @@ struct Pair<T> {
 }
 
 impl <T> Pair<T> {
-	fn new(x: T, y: T) -> Self { //Self the type not self
+	fn new(x: T, y: T) -> Self { //Self the type not self the instance
 		Self {
 			x,
 			y,
@@ -147,7 +147,7 @@ impl <T: Display + PartialOrd>  Pair<T> {
 }
 ```
 
-_**WHEW**_. That was a LOT to unpack. Goes to show how intricate generics can get I guess.
+_**WHEW**_. That was a LOT to unpack. Goes to show how intricate generics can get.
 
 ---
 Categories: [[Rust]]

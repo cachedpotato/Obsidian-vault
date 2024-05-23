@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-# Threads in Rust
+****# Threads in Rust
 OS separates a given process into multiple parts, and if possible will run them simultaneously. This is done by using threads. The same thing can apply to code. Rust has various methods/features for concurrency and parallelism. Let's start with the basics of threads.
 
 ## Creating a new thread

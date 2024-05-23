@@ -105,6 +105,16 @@ In conclusion:
 - If you want to have multiple ownership, wrap that with ```Rc<T>```
 - If you want multiple mutable ownership, wrap with ```Rc<RefCell<T>>```
 
+## Differences between smart Box, Rc and RefCell
+
+| -                     | Box | Rc  | RefCell |
+| --------------------- |:---:|:---:|:-------:|
+| Immutable Reference   | Yes | Yes |   Yes   |
+| Mutable Reference     | Yes | No  |   Yes   |
+| Multiple Ownership    | No  | Yes |   No    |
+| Interior Mutability   | No  | No  |   Yes   |
+| Compile Time Checking | Yes | Yes |   No    |
+| Runtime Chcking       | No  | No  |   Yes   |
 
 ---
 Categories: [[Smart Pointer]]
