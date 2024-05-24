@@ -2,7 +2,7 @@
 tags:
 ---
 # Pattern Matching in Rust
-Patterns are a special syntax in Rust for matching against the structure of types. A 
+Patterns are a special syntax in Rust for matching against the structure of types. 
 
 ---
 Categories: [[Rust]]
