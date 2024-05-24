@@ -66,8 +66,26 @@ impl Summary for NewsPaper {
 	}
 }
 ```
-
 basically, we use ```impl [trait name] for [type]```. 
+
+## Orphan Rule
+
+^240317
+
+So far we've seen how we can implement traits defined within our crate to types also defined in our crate. What if we want to implement our own traits to types defined outside of our crate, say, `Summary` on `Vec<T>`, or the other way around, let's say an external trait like `std::fmt::Display` to our custom type `NewsPaper`? Is it even possible?
+Why, yes it is!
+```
+impl<T> Summary for Vec<T> {
+	fn summarize(&self) -> String {...}
+}
+
+impl std::fmt::Display for NewsPaper {
+	fn fmt(&self, f: fmt::Formatter) {...}
+}
+```
+However, we **CANNOT** implement `Display` on `Vec<T>` in our crate, because they are both not defined here. This is the orphan rule of traits. In summary:
+
+- _we can implement traits on a type if and only if at least one of the trait or type is local to the crate_
 
 ## Trait as parameters
 besides using trait as a "characteristic" of a type, we can also pass it as a parameter. There are two kinds of ways it's used
