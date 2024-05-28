@@ -1,7 +1,5 @@
 ---
 tags:
-  - Rust
-parent: "[[Rust]]"
 ---
 Cargo is the package manager for [[Rust]]. The following are basic commands of cargo:
 
@@ -23,5 +21,6 @@ cargo build //no optimization, in target/debug
 cargo build --release //optimized, in target/release
 ```
 
-
+---
+Categories: [[Cargo]]
 Created: 2024-05-09

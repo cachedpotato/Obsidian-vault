@@ -80,7 +80,7 @@ pub fn eat_at_restaurant() {
 }
 ```
 
-Nota that back_of_house is NOT set to public, but eat_at_restaurant() can still use the Appetizer enum, as that one IS public.
+Nota that `back_of_house` is NOT set to public, but `eat_at_restaurant()` can still use the Appetizer enum, as that one IS public.
 ## References
 
 categories: [[Rust]]
