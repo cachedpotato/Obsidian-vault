@@ -47,6 +47,49 @@ let args = &mut 3;
 ```
 ...These 2 are different. One means the variable itself can be mutated, and the other means the value the variable is referencing to is mutable. 
 
+## Mutability in function parameters
+say we have a function that _CONSUMES_ the vector it's given and returns a fresh new vector with additional element:
+```rust
+fn main() {
+	let mut v: Vec<i32> = vec![0, 1, 2];
+	let v1: Vec<i32> = add_three(v);
+	assert_eq!(v1, vec![0,1,2,3]);
+}
+
+fn add_three(v: Vec<i32>) -> i32 {
+	v.push(3);
+	v
+}
+```
+We set the vector `v` to be mutable, which is then passed into the function and is consumed, all is well... NOT! because we did not specify in the _function parameter_ that it's going to be borrowed as mutable!
+```
+warning: variable does not need to be mutable
+  --> exercises/move_semantics/move_semantics3.rs:13:9
+   |
+13 |     let mut vec0 = vec![22, 44, 66];
+   |         ----^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+error[E0596]: cannot borrow `vec` as mutable, as it is not declared as mutable
+  --> exercises/move_semantics/move_semantics3.rs:21:5
+   |
+21 |     vec.push(88);
+   |     ^^^ cannot borrow as mutable
+   |
+help: consider changing this to be mutable
+   |
+20 | fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
+   |             +++
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0596`.
+```
+As the compiler kindly suggests, we need to specify `mut v: Vec<i32>` in the function signature as well!
+
 
 ---
 Categories: [[Rust]]

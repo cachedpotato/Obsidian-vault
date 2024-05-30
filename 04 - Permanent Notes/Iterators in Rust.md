@@ -41,6 +41,10 @@ println!("{:?}", iter_vec.next()); //None
 ```
 **ITERATORS MUST BE MUTABLE FOR THEM TO CALL THE NEXT METHOD**.
 
+## Iterator Methods
+`iter_mut()` returns a _REFERENCE_, so you need to dereference it first to access and change value
+
+
 ## Methods that consume iterator
 Methods that call ```next``` are called _consuming adaptors_, because it consumes the iterator. This means after calling the method the iterator is not reachable.
 ``` rust
