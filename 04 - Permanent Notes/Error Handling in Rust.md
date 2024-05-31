@@ -119,7 +119,7 @@ fn run(x: Config) -> Result<(), Box<dyn Error>> {
 	let test: String = x.stuff_that_returns_Result()?;
 }
 ```
-In this case, the ? operator will return the exit the run function with Err variant as output upon failure. Note that to use ? we need to have the function return Result with Err variant having the ```Error``` trait.
+In this case, the ? operator will return the exit the run function with Err variant as output upon failure. Note that to use ? we need to have the function return Result with Err variant having the ```Error``` trait, meaning, we _CANNOT USE IT IN THE MAIN FUNCTION WHERE IT RETURNS `()`!!!!_
 
 ---
 Categories: [[Rust]], [[Debug]] 

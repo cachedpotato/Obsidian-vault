@@ -1,5 +1,6 @@
 ---
 tags:
+  - NeedWork
 ---
 # Iterators in Rust
 The iterator is responsible for the logic of iterating over each item and determining when the sequence is finished.
@@ -86,6 +87,16 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
 	shoes.into_iter().filter(|s| s.size == shoe_size)
 }
 ```
+
+## Functional Programming with Iterators
+
+### Map
+
+### Flatmap
+
+### Filter
+### Fold vs Reduce
+
 
 ## loops vs iterators
 The age-old question: which is better?
