@@ -49,6 +49,49 @@ fn main() {
 ```
 We can use the ```_``` pattern to match anything, but this is still cumbersome in some cases. What if we just need one branch? enter ```if let```.
 
+## match and ownership
+just like loops, pattern matching will take ownership:
+```rust
+struct Point {
+	x: i32,
+	y: i32
+}
+fn main() {
+	let y: Option<Point> = Some(Point {x: 10, y: 10});
+	match y {
+		Some(p) => {println!("coord: {}, {}", p.x, p.y)},
+		_ => println!("no point detected"),
+	}
+}
+```
+running this will give this compiler error:
+```
+error[E0382]: use of partially moved value: `y`
+  --> exercises/options/options3.rs:18:5
+   |
+15 |         Some(p) => println!("Co-ordinates are {},{} ", p.x, p.y),
+   |              - value partially moved here
+...
+18 |     y; // Fix without deleting this line.
+   |     ^ value used here after partial move
+   |
+   = note: partial move occurs because value has type `Point`, which does not implement the `Copy` trait
+help: borrow this binding in the pattern to avoid moving the value
+   |
+15 |         Some(ref p) => println!("Co-ordinates are {},{} ", p.x, p.y),
+   |              +++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.
+```
+The rust compiler kindly recommends a solution: borrow the binding using the `ref` keyword:
+``` rust
+//--snip
+	Some(ref p) => {println!("{} {}", p.x, p.y)},
+	//--snip
+```
+
 ## if let
 ```rust
 let config_max: Option<usize> = Some<39>;

@@ -88,6 +88,25 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
 }
 ```
 
+## `iter()` vs `into_iter()`
+there are two main methods of creating iterators: `iter()` and `into_iter()`. These two have a lot in common, with one key difference - ownership. `iter()` creates an `Iter` type that will iterate over the _borrowed_ values of the original collection, whereas `into_iter()` will essentially _transform_ the collection into an `IntoIter` object. Take joining threads using `map` for an example:
+```rust
+fn main() {
+	//--snip
+	let results: Vec<i32> = handles.iter()
+		.map(|r| r.join().unwrap())
+		.collect();
+}
+```
+This will _NOT_ work because the ownership is moved when `join()` is called, but `r` itself is behind a shared reference. However, using `into_iter()` will work, since we have full ownership:
+``` rust
+fn main() {
+	let results: Vec<i32> = handles.into_iter()
+		.map(|r| r.join().unwrap())
+		.collect();
+}
+```
+
 ## Functional Programming with Iterators
 
 ### Map
@@ -96,6 +115,20 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
 
 ### Filter
 ### Fold vs Reduce
+1) Fold
+```rust
+let v: Vec<usize> = vec![0, 1, 2, 3, 4];
+let sum: usize = v.fold(0, |acc, x| acc + x);
+assert_eq(sum, 10);
+```
+`fold()` lets us explicitly type what our base case would be, and returns the raw summed/folded value.
+2) Reduce
+``` rust
+let v: Vec<usize> = vec![0, 1, 2, 3, 4];
+let sum = v.reduce(|acc, x| acc + x);
+assert_eq(sum, Some(10));
+```
+`reduce()` implicitly creates the base case using the first element of the iterator, and returns the value wrapped inside an `Option<T>`.
 
 
 ## loops vs iterators

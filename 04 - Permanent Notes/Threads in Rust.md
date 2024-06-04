@@ -94,6 +94,32 @@ fn main() {
 }
 ```
 
+## `join()` method
+the `thread::join()` method not only waits for all treads to finish their process, it also can be used for returning values created inside the thread. Reminder that the `JoinHandle`'s full type is `JoinHandle<T>`, and `join()` returns a `Result<T>`, which can then be `unwrap`ped to extract the value inside.
+
+```rust
+use std::thread;
+use std::time::{Duration, Instant};
+fn main() {
+	let mut handles: JoinHandle<usize> = vec![]
+	for i in 0..10 {
+		handles.push(thread::spawn(move || {
+			let start = Instant::now();
+			thread::sleep(Duration::from_millis(250));
+			println!("thread {i} complete");
+			start.elapsed.as_millis() //the returning value from thread
+		}));
+	}
+
+	let mut results = vec![]
+	let mut count:u u8 = 0;
+	let results: Vec<u128> = handles.into_iter()
+		.map(|r| r.join().unwrap())
+		.collect();
+	println!("results: {:?}", results);
+}
+```
+
 
 ---
 Categories: [[Rust]], [[Concurrency]], [[Parallelism]]

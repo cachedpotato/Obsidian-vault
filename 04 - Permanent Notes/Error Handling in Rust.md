@@ -112,6 +112,9 @@ it's better to use expect() than do nothing, but in will panic if an error occur
 Because Rust's most defining features include Options and Result, which are both wrapper enums, Rust provides a plethora of functions that deal with wrapping/unwrapping of such values. 
 
 ### ?
+`?` can be thought of as an `unwrap` like function where it returns either:
+	- if `Ok(n)`: `n`
+	- if `Err(e)`: `e`
 ```rust
 use std::error::Error;
 fn run(x: Config) -> Result<(), Box<dyn Error>> {
@@ -120,6 +123,30 @@ fn run(x: Config) -> Result<(), Box<dyn Error>> {
 }
 ```
 In this case, the ? operator will return the exit the run function with Err variant as output upon failure. Note that to use ? we need to have the function return Result with Err variant having the ```Error``` trait, meaning, we _CANNOT USE IT IN THE MAIN FUNCTION WHERE IT RETURNS `()`!!!!_
+
+### `map_err`
+this method is extremely useful when we're trying to make a function return a custom error value, which is a wrapper of a native error:
+```rust
+use std::num::ParseIntError;
+#[derive(PartialEq, Debug)]
+enum ParsePosNonzeroError {
+	Creation(CreationError),
+	ParseInt(ParseIntError),
+}
+impl ParsePosNonzeroError {
+	fn from_parseint(err: ParseIntError) -> Self {
+		Self::ParseInt(err)
+	}
+}
+
+fn parse_pos_nonzero(s: &str) -> Result<i32, ParsePosNonzeroError> {
+	s.parse::<i32>()
+		.map_err(|e| ParsePosNonzeroError::from_parseint)?;
+		//this is also possible
+		//.map_err(|e| ParsePosNonzeroError::from_parseint(e))?;
+}
+```
+the `parse_pos_nonzero(s)` function will return the parsed `i32` value or the `ParseInt` error wrapped inside our custom `ParsePosNonzeroError`.
 
 ---
 Categories: [[Rust]], [[Debug]] 

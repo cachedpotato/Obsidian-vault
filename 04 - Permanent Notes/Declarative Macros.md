@@ -27,6 +27,24 @@ Now let's look at the `($($:expr), *) =>`. Using the information above, we can f
 
 First, we make a temporary vector named `temp_vec`, then we repeat the `temp_vec.push($x)` command as many times as we need (hence the asterisk), which is the length of the input to our macro. Finally, we return the vector.
 
+Macro arms are divided not with `,` but with semicolons `;`
+```rust
+macro_rules! my_macro {
+	() => {
+		println!("Check out my macro!");
+	};
+	($val:expr) => {
+		pritntln!("Check out my other macro: {}", $val);
+	}
+}
+
+fn main() {
+	my_macro!();
+	my_macro!(7777);
+}
+
+```
+
 
 
 ---

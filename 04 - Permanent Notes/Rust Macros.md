@@ -12,6 +12,23 @@ Macros is what is often referred to as metaprogramming. Macros essentially is a 
 
 Macros can be used to reduce the amount of (repeated) code, but at the cost of readability. Macros also must be defined and brought into scope BEFORE calling in a file.
 
+## Macros in modules
+when you define macros inside a module, you must annotate the module with `#[macro_use]` to be able to actually call the macro.
+``` rust
+#[macro_use]
+mod macros {
+	macro_rules! my_macro {
+		() => {
+			println!("This is a macro");
+		}
+	}
+}
+
+fn main() {
+	my_macro!();
+}
+```
+
 ---
 Categories: [[Rust]]
 References:

@@ -1,7 +1,7 @@
 ---
 tags: []
 ---
-**# Enum
+# Enum
 enum is a type that can be one of a given set of types. types within enum can be pretty much anything.
 ```rust
 enum Message {
