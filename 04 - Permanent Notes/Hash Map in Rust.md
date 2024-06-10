@@ -3,7 +3,7 @@ tags:
   - Rust
 ---
 # Hash Map in Rust
-Hash map, compared to other collections, used less and lacks macro support for creating one, let alone not being included in the prelude. Still Hash maps are very useful. O(1) enjoyers anyone?
+[[Hash Map|Hash maps]], compared to other collections, used less and lacks macro support for creating one, let alone not being included in the prelude. Still Hash maps are very useful. O(1) enjoyers anyone?
 ```rust
 use std::collections::HashMap
 let mut map: HashMap<String, u32> = HashMap::new();
@@ -76,6 +76,6 @@ println!("map: {:?}")
 
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[Rust]]
 References:
 Created: 2024-05-12
