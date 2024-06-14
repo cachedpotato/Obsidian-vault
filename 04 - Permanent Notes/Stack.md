@@ -2,7 +2,7 @@
 tags:
 ---
 # Stack
-Stack is one of the most primitive one-dimensional data structure. Because it is 1D, it shares, or rather contains, features that can be found in normal arrays, but stacks have its own spin on thigs: First In, Last Out (FILO). As the name suggests, whatever's been added to the stack at the end, will be "popped" out first.
+Stack is one of the most primitive one-dimensional data structure. Because it is 1D, it shares, or rather contains, features that can be found in normal arrays, but stacks have its own spin on thigs: Last In, First Out (LIFO). As the name suggests, whatever's been added to the stack at the end, will be "popped" out first.
 ![[stack.webp|500]]
 FILO data structures might seem inconvenient at best at first glance, but this very structure is how computer handles its processes and why they are so fast!
 

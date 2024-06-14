@@ -13,6 +13,44 @@ In Godot, we can represent this using Enums as states.
 enum {INIT, ALIVE, DEAD, INVULNERABLE}
 ```
 
+## Updating states
+FSM is useless unless we incorporate some way of changing states based on what the player does. There are many ways of implementing this, but one of the more simple approach is the following
+- create a `change_state()` function that holds some sequence of logic to do when something is in said state.
+
+- For any given object that can inherit this state, have them call this function whenever some flag is triggered.
+
+A simple example of this in Godot would look like this:
+```GDScript
+signal lives_changed
+func change_state(new_state):
+	match new_state:
+		INIT:
+			$CollisionShape2D.set_deferred("disabled", true)
+			#some other logic...
+		ALIVE:
+			$CollisionShape2D.set_deferred("disabled", false)
+			#some other logic...
+		DEAD:
+			$CollisionShape2D.set_deferred("disabled", true)
+			#some other logic...
+		INVULNERABLE:
+			$CollisionShape2D.set_deferred("disabled", true)
+			#some other logic...
+
+
+#--snip
+func set_lives(value):
+	lives = value
+	lives_changed.emit(lives)
+	if lives <= 0:
+		change_state(DEAD)
+	else:
+		change_state(INVULERABLE)
+```
+
+Here we first define the `change_state` function, that mainly deals with collision detection. Then, in `set_lives` function, when lives is the value of 0, then we triggered the flag (see the FSM above) to change the player's state to `DEAD`, so we call the `change_state(DEAD)` function. This will disable the collision box.
+
+
 ---
 Categories: [[Game Development]], [[CS50 - Game]]
 References:

@@ -1,7 +1,8 @@
 ---
-tags: 
+tags:
+  - MoC
 ---
-# {{title}}
+# Game Development
 
 
 ---

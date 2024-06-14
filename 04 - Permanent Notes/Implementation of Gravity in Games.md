@@ -35,6 +35,38 @@ function Bird:update(dt)
 end
 ```
 
+## Extending the Concept of gravity - Jumping
+Now that we know how gravity works, how do we "jump?" jumping isn't just about y axis, it's also about the x axis. Think of a parabola:
+![[Pasted image 20240614172545.png]]
+Every frame, we update the player's position by updating it's x and y positional values, which is essentially just a vector operation.
+Because the force of gravity only acts upon the y axis, it has no dependency on the change of x, meaning we can calculate them separately, like so:
+```lua
+JUMP_FORCE = -200
+GRAVITY = 7
+function love.keypressed(key)
+	if key == 'escape' then
+		love.quit()
+	else if key == 'space' then
+		DY = JUMP_FORCE
+
+end
+
+function love.update(dt)
+	if love.keyboard.isDown('left') then
+		characterX = characterX - CHARACTER_MOVE_SPEED * dt
+	else if love.keyboard.isDown('right') then
+		characterX = characterX + CHARACTER_MOVE_SPEED * dt
+	end
+
+	DY = DY + GRAVITY
+	characterY = characterY + DY * dt
+	if characterY >= (7 - 1)*TILE_SIZE - CHARACTER_HEIGHT then
+		--we have hit the ground
+		--stop falling and update acceleration to 0
+		characterY = (7 - 1)*TILE_SIZE - CHARACTER_HEIGHT
+		DY = 0
+end
+```
 
 ---
 Categories: [[Game Development]], [[Physics Engine]]
