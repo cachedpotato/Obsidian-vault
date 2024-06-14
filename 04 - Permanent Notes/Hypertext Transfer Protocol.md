@@ -32,8 +32,35 @@ the `/` after `GET` is the "directory" of the website. If we think of a website 
 ```
 GET /foo HTTP/1.1
 ```
+## Status Code
+Here are some of the more common status codes we see:
 
+| Status code | Meaning               |
+| ----------- | --------------------- |
+| 200         | OK                    |
+| 301         | Moved Permanently     |
+| 302         | Found                 |
+| 304         | Not Modified          |
+| 307         | Temporary Redirect    |
+| 401         | Unauthorized          |
+| 403         | Forbidden             |
+| 404         | Not Found             |
+| 500         | Internal Server Error |
+| 503         | Service Unavailable   |
+Code 300~: Redirects
+Code 400~: User is the problem
+Code 500~: Server is the problem
 
+## User input with HTTP/HTML
+We can actually get user inputs in HTTP, and in URLs it is shown as key-value pairs with a question mark, like so:
+```
+https://www.google.com/search?q=cats
+```
+Here, `q` is the key and `cats` is the value (user input). `search` here is the path. To generalize, getting user inputs looks like this:
+```
+https://huh.website.domain/path?key=value&key=value..
+```
+as we can see we can get multiple inputs with `&`.
 
 
 ---

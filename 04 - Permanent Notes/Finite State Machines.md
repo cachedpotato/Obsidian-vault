@@ -6,12 +6,14 @@ Players, NPCs, or anything really, can be in multiple states. We can set flags t
 ![[FSM 2024-06-02 19.01.22.excalidraw.png]]
 Above is a simple FSM for a Player. States are the ellipses. Text written on the arrows are the flags that trigger a transformation from one state to the other. We can see that There can be only one possible state at any given time, no matter how the flags are set.
 
+Using States, we can control the player or game objects in a more modular fashion, keeping the code and logic cleaner than if we were to add arbitrary flags to everything.
+
 In Godot, we can represent this using Enums as states.
 ```godot
 enum {INIT, ALIVE, DEAD, INVULNERABLE}
 ```
 
 ---
-Categories: [[Game Development]]
+Categories: [[Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-02
