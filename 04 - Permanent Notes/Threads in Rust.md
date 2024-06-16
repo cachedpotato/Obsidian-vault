@@ -122,6 +122,6 @@ fn main() {
 
 
 ---
-Categories: [[Rust]], [[Concurrency]], [[Parallelism]]
+Categories: [[011-Rust]], [[Concurrency]], [[Parallelism]]
 References:
 Created: 2024-05-22

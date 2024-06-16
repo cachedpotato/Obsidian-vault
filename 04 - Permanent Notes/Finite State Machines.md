@@ -52,6 +52,6 @@ Here we first define the `change_state` function, that mainly deals with collisi
 
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-02

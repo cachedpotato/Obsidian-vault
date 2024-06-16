@@ -64,6 +64,6 @@ as we can see we can get multiple inputs with `&`.
 
 
 ---
-Categories: [[Computer Network]]
+Categories: [[040-Computer Network]]
 References:
 Created: 2024-05-29

@@ -19,6 +19,6 @@ $$
 This means, we can just compute using the inputs and some kernel function $K$ and not explicitly using the transformation function. We can then view the kernel function as a function that measures "similarity" between two points in the feature map space.
 
 ---
-Categories: [[Machine Learning]], [[Statistics]]
+Categories: [[Machine Learning]], [[050-Statistics]]
 References:
 Created: 2024-05-01

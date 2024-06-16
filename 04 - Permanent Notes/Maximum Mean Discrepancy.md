@@ -34,7 +34,7 @@ It is also important to note that the mean $\mu_x$ itself is called a mean embed
 
 
 ---
-Categories: [[Statistics]]
+Categories: [[050-Statistics]]
 References:
 https://jmlr.csail.mit.edu/papers/v13/gretton12a.html
 Created: 2024-05-01

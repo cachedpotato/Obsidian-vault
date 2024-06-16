@@ -22,7 +22,7 @@ Dimension reduction algorithms fall into 2 categories.
 - Laplacian eigenmaps
 
 ---
-Categories: [[Statistics]], [[Data Visualization]]
+Categories: [[050-Statistics]], [[Data Visualization]]
 References:
 https://arxiv.org/abs/1802.03426
 Created: 2024-05-21

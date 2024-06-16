@@ -38,6 +38,6 @@ for i in &mut v { //reference of vector
 ```
 
 ---
-Categories: [[Rust]],[[Memory Management]]
+Categories: [[011-Rust]],[[Memory Management]]
 References:
 Created: 2024-05-09

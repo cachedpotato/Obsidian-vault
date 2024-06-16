@@ -30,7 +30,7 @@ fn main() {
 ```
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 References:
 https://veykril.github.io/tlborm/
 https://doc.rust-lang.org/reference/macros-by-example.html

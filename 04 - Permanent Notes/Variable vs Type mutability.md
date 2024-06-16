@@ -92,6 +92,6 @@ As the compiler kindly suggests, we need to specify `mut v: Vec<i32>` in the fun
 
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 References:
 Created: 2024-05-16

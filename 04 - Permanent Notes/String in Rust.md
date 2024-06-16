@@ -133,6 +133,6 @@ for l in s.bytes() {
 this will print all binary value within the string
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[011-Rust]], [[Data Types]]
 References: 
 Created: 2024-05-09

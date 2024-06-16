@@ -72,6 +72,6 @@ assert_eq!(call_with_one(the_closure), 2);
 
 
 ---
-Categories: [[Rust]], [[Closure]]
+Categories: [[011-Rust]], [[Closure]]
 References:
 Created: 2024-05-15

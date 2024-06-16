@@ -14,5 +14,5 @@ Checksum is calculated by using what's called a Pseudo Header, and the structure
 
 ## References
 
-Categories: [[Computer Network]]
+Categories: [[040-Computer Network]]
 Created: 2024-05-03

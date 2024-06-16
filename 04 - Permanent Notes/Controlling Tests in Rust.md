@@ -78,6 +78,6 @@ upon ```cargo test```, only ```this_test_runs``` will be tests. some notes about
 
 
 ---
-Categories: [[Rust]], [[Debug]], [[Testing in Rust]] 
+Categories: [[011-Rust]], [[Debug]], [[Testing in Rust]] 
 References:
 Created: 2024-05-14

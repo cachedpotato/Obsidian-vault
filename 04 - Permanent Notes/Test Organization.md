@@ -65,6 +65,6 @@ mod common; //module name
 ```
 
 ---
-Categories: [[Rust]], [[Debug]], [[Testing in Rust]]
+Categories: [[011-Rust]], [[Debug]], [[Testing in Rust]]
 References:
 Created: 2024-05-14

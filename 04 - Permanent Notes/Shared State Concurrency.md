@@ -103,6 +103,6 @@ error[E0277]: `Rc<Mutex<i32>>` cannot be sent between threads safely
 What we need to use instead, is an Reference Counter with atomicity. Thankfully, Rust has just that - yet another smart pointer called [[Arc]].
 
 ---
-Categories: [[Concurrency]], [[Rust]], [[Mutex]]
+Categories: [[Concurrency]], [[011-Rust]], [[Mutex]]
 References:
 Created: 2024-05-23

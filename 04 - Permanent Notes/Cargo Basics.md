@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-Cargo is the package manager for [[Rust]]. The following are basic commands of cargo:
+Cargo is the package manager for [[011-Rust]]. The following are basic commands of cargo:
 
 ``` rust
 cargo init //creating a new crate from preexisting directory

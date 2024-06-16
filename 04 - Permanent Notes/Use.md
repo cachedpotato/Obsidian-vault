@@ -126,5 +126,5 @@ use std::collections::*
 above example will bring ALL public items into current scope.
 ## References
 
-categories: [[Rust]]
+categories: [[011-Rust]]
 Created: 2024-05-11

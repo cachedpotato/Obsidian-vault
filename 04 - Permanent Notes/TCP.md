@@ -41,5 +41,5 @@ The only difference is that FIN flag is set instead of SYN.
 
 
 ---
-Categories: [[Computer Network]]
+Categories: [[040-Computer Network]]
 References:

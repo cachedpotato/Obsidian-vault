@@ -5,7 +5,7 @@ tags:
 # Programming Language
 
 ## List of Programming Languages
-- [[Rust]]
+- [[011-Rust]]
 - [[C/C++]] 
 - [[JavaScript]]
 

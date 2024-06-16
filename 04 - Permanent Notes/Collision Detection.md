@@ -45,6 +45,6 @@ func _on_area_entered(area):
 
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-14

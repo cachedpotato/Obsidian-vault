@@ -51,7 +51,7 @@ $$
 $B$ used here is called the modularity matrix. the 1/2 is omitted for ease of computing.
 
 ---
-Categories: [[Network Science]], [[Statistics]]
+Categories: [[Network Science]], [[050-Statistics]]
 References:
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1482622/
 https://neo4j.com/blog/graph-algorithms-neo4j-louvain-modularity/

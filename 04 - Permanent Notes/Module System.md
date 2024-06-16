@@ -31,5 +31,5 @@ path allows you to name items, and show Rust where to find an item in the module
 
 ## References
 
-categories: [[Rust]]
+categories: [[011-Rust]]
 Created: 2024-05-11

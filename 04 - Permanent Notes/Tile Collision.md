@@ -27,5 +27,5 @@ There is one small thing we need to consider. because the tiles are fixed size, 
 - for wall (left): upper left and lower left
 
 ---
-Categories: [[Game Development]], [[Collision Detection]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[Collision Detection]], [[CS50 - Game]]
 References:

@@ -106,6 +106,6 @@ Because of Rust's unique borrow checker, references can be hard to get used to. 
 - [[Rust Error E0506]]: Cannot assign to x because it is borrowed
 
 ---
-Categories: [[Rust]] 
+Categories: [[011-Rust]] 
 References:
 Created: 2024-05-10

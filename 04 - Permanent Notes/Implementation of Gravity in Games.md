@@ -69,6 +69,6 @@ end
 ```
 
 ---
-Categories: [[Game Development]], [[Physics Engine]]
+Categories: [[020-Game Development]], [[Physics Engine]]
 References:
 Created: 2024-06-14

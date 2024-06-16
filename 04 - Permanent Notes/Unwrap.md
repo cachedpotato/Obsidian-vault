@@ -41,6 +41,6 @@ let n: Config::build(&args).unwrap_or_else(|err| {
 
 
 ---
-Categories: [[Rust]] 
+Categories: [[011-Rust]] 
 References:
 Created: 2024-05-15

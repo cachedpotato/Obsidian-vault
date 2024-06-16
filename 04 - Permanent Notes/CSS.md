@@ -86,6 +86,6 @@ means the text will now be in green, not red!
 ```
 
 ---
-Categories: [[Web Development]], [[CS50 - Introduction]]
+Categories: [[030-Web Development]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-14

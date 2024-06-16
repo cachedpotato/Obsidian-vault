@@ -71,6 +71,6 @@ fn genericfunc<T> (n: T) -> T {
 ```
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[011-Rust]], [[Data Types]]
 References:
 Created: 2024-05-09

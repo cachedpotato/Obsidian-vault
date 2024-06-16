@@ -34,5 +34,5 @@ Setting the opacity to 0 will make it transparent. After all is done, we delete 
 
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:

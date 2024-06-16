@@ -100,6 +100,6 @@ fn main() {
 
 
 ---
-Categories: [[Rust]], [[Traits in Rust]]
+Categories: [[011-Rust]], [[Traits in Rust]]
 References:
 Created: 2024-06-03

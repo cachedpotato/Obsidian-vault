@@ -172,6 +172,6 @@ mod tests {
 ```
 
 ---
-Categories: [[Rust]], [[Debug]]
+Categories: [[011-Rust]], [[Debug]]
 References:
 Created: 2024-05-14

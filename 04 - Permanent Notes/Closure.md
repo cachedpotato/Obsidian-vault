@@ -86,6 +86,6 @@ closures implement different traits depending on how it captures/handles environ
 
 
 ---
-Categories: [[Rust]], [[Functional Programming]]
+Categories: [[011-Rust]], [[Functional Programming]]
 References:
 Created: 2024-05-15

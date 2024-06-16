@@ -67,6 +67,6 @@ therefore you should wrap it with a pointer.
 
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 References:
 Created: 2024-05-28

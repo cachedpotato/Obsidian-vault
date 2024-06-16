@@ -73,8 +73,27 @@ On the website, there will be a hyperlink in the word Harvard, and will direct t
 ## Whitespace
 HTML doesn't really care about whitespace bigger than length 1. To actually create paragraphs, use the `<p></p>` tag (the paragraph tag)
 
+We can also divide our page into subdivisions with `<div>`.
+
+## `data`
+We can add some data to each HTML element with the attribute `data-name`. for example, if we want to store data about colors for our buttons:
+```html
+<button data-colors="red">Red</button>
+<button data-colors="blue">Blue</button>
+<button data-colors="green">Green</button>
+```
+
+We can then access this using `dataset.name` in JavaScript, like so:
+```js
+function stuff() {
+	document.querySelectorAll('button').forEach(function() {
+		document.querySelector('h1').style.color = 
+			button.dataset.colors;
+	})
+}
+```
 
 ---
-Categories: [[Computer Network]], [[Web Development]], [[CS50 - Introduction]]
+Categories: [[040-Computer Network]], [[030-Web Development]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-13

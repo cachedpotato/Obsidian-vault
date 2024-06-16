@@ -31,6 +31,6 @@ impl Rectangle {
 ```
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 Reference: 
 Created: 2024-05-11

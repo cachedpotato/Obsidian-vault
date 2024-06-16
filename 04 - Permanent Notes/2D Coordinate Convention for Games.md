@@ -21,6 +21,6 @@ func _process(delta):
 here the `velocity * speed * delta` is the $(dx, dy)$ part of the formula. this update is done every frame. We can also see here that the direction in which the object will move is represented as the vector created by user's keyboard input.
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-14

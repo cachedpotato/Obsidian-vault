@@ -27,6 +27,6 @@ $$
 which can cut down dimensions all the way down to $R^n$ from infinity.
 
 ---
-Categories: [[Statistics]]
+Categories: [[050-Statistics]]
 References:
 Created: 2024-05-01

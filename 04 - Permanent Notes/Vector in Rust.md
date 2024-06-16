@@ -83,6 +83,6 @@ for i in &snarky_vector {
 
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[011-Rust]], [[Data Types]]
 References:
 Created: 2024-05-12

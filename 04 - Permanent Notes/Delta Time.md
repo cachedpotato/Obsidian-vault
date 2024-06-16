@@ -27,6 +27,6 @@ position(x_{i+2})@60FPS& = position(x_{i}) + velocity * 2\Delta t_{60} \\
 $$
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-14

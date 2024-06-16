@@ -16,7 +16,7 @@ Not just that, models we _thought_ were in 3D are just 2D images, just angled to
 
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 https://www.youtube.com/watch?v=HUgE9L7V4oY
 Created: 2024-06-14

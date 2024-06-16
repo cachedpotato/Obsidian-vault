@@ -20,6 +20,6 @@ func _process(delta):
 *After* calculating the position, we `clamp` it to some boundary, which in this case is the size of the screen defined by the `scrensize` variable.
 
 ---
-Categories: [[Game Development]]
+Categories: [[020-Game Development]]
 References:
 Created: 2024-06-14

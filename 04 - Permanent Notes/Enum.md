@@ -129,5 +129,5 @@ enum Result<T, E> {
 If some function returns a result, it's best practice to do [[Error Handling in Rust]], which is basically taking care of error cases.
 
 ---
-*Categories*: [[Rust]], [[Data Types]]
+*Categories*: [[011-Rust]], [[Data Types]]
 Created: 2024-05-09

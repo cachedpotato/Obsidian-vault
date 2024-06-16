@@ -80,7 +80,7 @@ $$
 Note that $K(x, .)$ takes x as **parameter** not a variable
 
 ---
-Categories: [[Statistics]]
+Categories: [[050-Statistics]]
 References:
 https://www.youtube.com/watch?v=EoM_DF3VAO8
 Created: 2024-05-01

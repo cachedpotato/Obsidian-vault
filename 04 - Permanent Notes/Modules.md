@@ -30,5 +30,5 @@ let a: Asparagus = Asparagus
 
 ## References
 
-categories: [[Rust]]
+categories: [[011-Rust]]
 Created: 2024-05-11

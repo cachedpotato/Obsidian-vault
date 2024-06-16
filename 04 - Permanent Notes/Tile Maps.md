@@ -15,5 +15,5 @@ Just like [[Sprite Sheets]], we can access and put tiles using quads, though mos
 
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:

@@ -24,6 +24,6 @@ Examples of Smart pointers include:
 
 
 ---
-Categories: [[Rust]], [[Pointer]] 
+Categories: [[011-Rust]], [[Pointer]] 
 References:
 Created: 2024-05-16

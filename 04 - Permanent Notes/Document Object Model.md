@@ -21,6 +21,6 @@ Document Object Model, or DOM in short, is a paradigm where the object organizes
 4) `removeChild(node)`
 
 ---
-Categories: [[Web Development]], [[JavaScript]], [[CS50 - Introduction]]
+Categories: [[030-Web Development]], [[JavaScript]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-14

@@ -39,6 +39,6 @@ the `update(dt)` function updates the _starting point_ at which the picture is d
 ![[Pasted image 20240614090711.png]]
 
 ---
-Categories: [[Game Development]], [[CS50 - Game]]
+Categories: [[020-Game Development]], [[CS50 - Game]]
 References:
 Created: 2024-06-14

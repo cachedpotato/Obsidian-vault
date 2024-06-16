@@ -168,6 +168,6 @@ impl <T: Display + PartialOrd>  Pair<T> {
 _**WHEW**_. That was a LOT to unpack. Goes to show how intricate generics can get.
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 References:
 Created: 2024-05-14

@@ -37,7 +37,15 @@ document.querySelector('#red').addEventListener('click', function(event){
 
 A bit different than what we've been talking about here, but from the code above, we can see that JS can be used as a functional programming language, where everything is pretty much a call to a function, without any imperative `for` or `while` loops.
 
+## Importing JS files to HTML
+if CSS used `<link href = "">`, JS uses `<script src = "">`
+```html 
+<head>
+	<script src="thisisajavascriptfile.js"></script>
+</head>
+```
+
 ---
-Categories: [[Web Development]], [[Hypertext Markup Language]],[[CS50 - Introduction]]
+Categories: [[030-Web Development]], [[Hypertext Markup Language]],[[CS50 - Introduction]]
 References:
 Created: 2024-06-14

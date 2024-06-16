@@ -157,6 +157,6 @@ a.iter() //iterator
 
 
 ---
-Categories: [[Rust]]
+Categories: [[011-Rust]]
 References:
 Created: 2024-05-15

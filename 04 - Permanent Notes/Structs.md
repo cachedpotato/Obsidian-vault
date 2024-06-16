@@ -84,6 +84,6 @@ fn main() {
 ```
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[011-Rust]], [[Data Types]]
 References:
 Created: 2024-05-10

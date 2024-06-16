@@ -149,6 +149,6 @@ fn parse_pos_nonzero(s: &str) -> Result<i32, ParsePosNonzeroError> {
 the `parse_pos_nonzero(s)` function will return the parsed `i32` value or the `ParseInt` error wrapped inside our custom `ParsePosNonzeroError`.
 
 ---
-Categories: [[Rust]], [[Debug]] 
+Categories: [[011-Rust]], [[Debug]] 
 References: 
 Created: 2024-05-09

@@ -131,6 +131,6 @@ On a side note - since we are 1. passing ```self``` and not ```&self``` and 2. w
 
 
 ---
-Categories: [[Rust]], [[Data Types]]
+Categories: [[011-Rust]], [[Data Types]]
 References:
 Created: 2024-05-14
