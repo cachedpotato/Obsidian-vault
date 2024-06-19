@@ -106,6 +106,98 @@ the `return()` is for cleanup. if you have an `eventListener` inside the `useEff
 
 ## `useContext()`
 `useContext()` hook allows us to share values between multiple _levels_ of components without passing props through each level.
+If we were to have 4 Components nested into each other, without using the hook, we would've had to do this:
+```jsx
+import ComponenB from "./ComponentB"
+function ComponentA() {
+	const [user, setUser] = useState("");
+	return(<><ComponentB user={user}/></>);
+}
+```
+In `ComponentB`
+```jsx
+import ComponenC from "./ComponentC"
+function ComponentB(props) {
+	const [user, setUser] = useState("");
+	return(<><ComponentC user={props.user}/></>);
+}
+```
+In `ComponentC`
+```jsx
+import ComponenD from "./ComponentD"
+function ComponentC(props) {
+	const [user, setUser] = useState("");
+	return(<><ComponentD user={props.user}/></>);
+}
+```
+In `ComponentD`
+```jsx
+function ComponentD(props){
+	return(<div><p>{`Bye ${props.user}`}</p></div>)
+}
+```
+This is known as _props drilling_ and can get really tedious really fast. Not to mention you still need to pass it through all levels even if they themselves are not using it. By using the `useContext()` hook, we can simply this process.
+
+To use the `useContext` hook, we just need three steps:
+1) `import React, {createContext} from 'react'` from the _PROVIDER_
+2) the _PROVIDER_ will create a context by:
+```jsx
+export const StateContext = createContext();
+function MyComponent() {
+	const [state, setState] = useState();
+	return (
+		<div>
+			<StateContext.Provider value={state}>
+				<ComponentB />
+			</StateContext.Provider>
+		</div>
+	)
+}
+```
+3) the _CONSUMER_ will use the context by:
+```jsx
+import {StateContext} from "./MyComponent"
+import React, {useContext} from 'react'
+function ComponentD() {
+	const state = useContext(StateContext);
+	return(<p>{state}</p>)
+}
+```
+We can have multiple consumers, too!
+
+## `useRef()` Hook
+`useRef` hook is used when you want to don't want to cause re-renders on value change but still want to remember that change nonetheless. This is used for:
+- Accessing/Interacting with DOM elements
+- Handling Focus, Animations and transitions
+- Managing timers and intervals
+
+`useRef` returns an object that returns one property `current`. This property can be anything - array, object, even an HTML element!
+```jsx
+import React, {useRef, useEffect} from 'react'
+
+function MyComponentLoadsOnlyOnce() {
+	const inputRef = useRef(null);
+
+	useEffect(() => {
+		console.log("COMPONENT RENDERED");
+	});
+
+	handleClick() {
+		inputRef.current.style.backgroundColor = "yellow";
+		inputRef.current.focus();
+	}
+
+	return(
+		<div>
+			<button onClick={handleClick}>Click Me</button>
+			<input ref={inputRef} />
+		</div>
+	)
+}
+```
+the `ref` attribute in the `<input>` element is a special attribute that creates reference to a value. Here, we passed `inputRef`. This code will make the input field change background color to yellow when clicked. This is because the `input` tag holds a reference `inputRef`, and when `handleClick` is called we change the values of `inputRef`'s `current` .
+![[Pasted image 20240618155948.png|600]]
+As mentioned, `useRef` object does not re-render components. if we check the console log, we would only see `COMPONENT RENEDERED` once, whereas if we used `useState()`, we would've seen the message every time the input field has been changed.
 
 
 
