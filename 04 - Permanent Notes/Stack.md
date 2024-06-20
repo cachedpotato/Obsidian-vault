@@ -43,7 +43,7 @@ However, this is easier said than done - exactly WHEN do we need FILO?
 We can interpret FILO in this way: whatever comes last, will affect the one before. So, to get the final value, we need to do some computation on a "higher level" first, then move "downwards". In other words, stacks can be used to obtain a "low level" result with "higher level" dependencies.
 
 Examples include:
-1) [[Depth First Search]] algorithm, where we find a certain path to the answer using "trees"
+1) [[Depth First Search Algorithm]] algorithm, where we find a certain path to the answer using "trees"
 2) Pathfinding/simulating with tree structure
 3) Cases where backtracking in arrays are involved
 4) Cases where "innermost" thing needs to be computed first
