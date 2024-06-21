@@ -1,9 +1,15 @@
+---
+tags:
+  - "#HOME"
+---
+
 # Welcome!
 Hey! Didn't see you there.
 
 Welcome to my obsidian vault! There isn't much to look at but I hope you enjoy your short stay here.
 
-I wasn't really into proper notetaking, as much as I enjoy learning new stuff on a very surface level I normally just forget what I've just learned and move on, but one day I thought "you know what? maybe I should really start organizing my notes. It _MIGHT_ come in handy later on.", and here we are.
+I wasn't really into proper notetaking, as much as I enjoy learning new stuff on a very surface level I normall:w
+y just forget what I've just learned and move on, but one day I thought "you know what? maybe I should really start organizing my notes. It _MIGHT_ come in handy later on.", and here we are.
 
 To those who stopped by, I'm guessing you're already involved in the Obsidian community and/or interested in note taking, but if not, I sincerely ask of you to give it a try. Keeping notes have helped me IMMENSELY in a lot of things.
 
