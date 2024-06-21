@@ -38,8 +38,17 @@ class Player {
 //snip
 ```
 
+## Practical Example: UR5
+In Unreal Engine, Objects are defined in blueprints. Blueprints are divided into classes, and we can further subdivide those classes into our custom player/object class. 
+
+After the basics are set, we can use inheritance to pass down its properties down to its child classes.
+![[Pasted image 20240621225955.png | 600]]
+Below is a simple diagram example for OOP and inheritance:
+![[Pasted image 20240621230506.png|500]]
+
+
 
 ---
-Categories: [[020-Game Development]]
+Categories: [[020-Game Development]], [[Unreal Engine]]
 References:
 Created: 2024-06-14
