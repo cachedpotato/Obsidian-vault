@@ -21,5 +21,5 @@ Then, we cast that to `PlayerController`, Pass that through what's called an `En
 ### Enhanced Input Local Subsystem
 
 ---
-Categories: [[Unreal Engine]], [[2D Game Dev]]
+Categories: [[Unreal Engine]]
 References:

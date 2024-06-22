@@ -19,8 +19,9 @@ tags:
 `<C-SHIFT-N>`: Create Directory
 
 ## In Event Graph
-`<Ctrl-Drag Varaible>`: place the `GETTER` in the graph
+`<C-Drag Varaible>`: place the `GETTER` in the graph
 `<ALT-Drag Variable>`: Place the `SETTER` in the graph
+`<B-LEFT CLICK>`: Create `Branch` node
 
 
 ---
