@@ -15,23 +15,34 @@ If we have a switch/branch that connects to the same function, instead of copy p
 ![[Pasted image 20240622085835.png]]
 
 
+## Flip Flop
+Will alternate between two inputs. Inputs can be events as well.
 
-## `Destroy Actor`
-Destroys `self`. 
 
-## `Cast To <Actor>`
-Checks if the cast is compatible to the `<actor>`. In other words, checks if whatever's activating this node can be changed into `<actor>`. has three output branch:
-- `exec`: for next part of the logic.
-- `Cast Failed`: executed upon failure
-- `As <Actor>`: sets command for the `Actor` that triggered this event.
-ex) `As BP_ThirdPersonCharacter > Jump > Target`: after this event is triggered, the `ThirdPersonCharacter` instance will `jump`. 
-
-Cast is extremely versatile but also quite heavy. Use `interface` instead for heavier logic.
+## Clamp
+Sets the min/max possible value of a variable
 
 ## Get/Set Relative Location
 Self explanatory. Get/sets the relative location. We can store this as a variable then pass it to something else.
 
+## Get Flipbook
+Useful for changing flipbook based on a certain condition. For example, we may want to dynamically change the running animation's play rate depending on the current length of the velocity, but not necessarily for idle animation. We can do logic akin to:
+```c++
+void setPlayRate(player) {
+	if (player.sprite) == "running" {
+		player.sprite.playrate = movement.velocity.length()/movement.maximumVelocity;
+	} else {
+		player.sprite.playrate = 1;
+	}
+}
+```
+to do this in event graph, we need some sort of way to grab the current sprite and check if its the 'running' flipbook or the 'idle' flipbook. This is where the `get flipbook` node comes in handy:
+![[Pasted image 20240623171120.png]]
+
 ## Timeline
+
+^084440
+
 Timeline node allows values to be keyframed over time. There are three outputs:
 - Update
 - Finished
@@ -68,17 +79,44 @@ Here, the `t` serves the same purpose as alpha in lerp.
 This is a rather heavy operation, so It's not recommended to hook this to something like `Event Tick`. This is used for creating a reference of something that is outside of the current blueprint. For example, if we want some value within BP 1 to control a function in BP 2, we can use this node, set the `Actor Class` to the function we want to reference, and promote the output to a variable, like so:
 ![[Pasted image 20240621235012.png]]
 
+## `Destroy Actor`
+Destroys `self`. 
+
+## `Cast To <Actor>`
+Checks if the cast is compatible to the `<actor>`. In other words, checks if whatever's activating this node can be changed into `<actor>`. has three output branch:
+- `exec`: for next part of the logic.
+- `Cast Failed`: executed upon failure
+- `As <Actor>`: sets command for the `Actor` that triggered this event.
+ex) `As BP_ThirdPersonCharacter > Jump > Target`: after this event is triggered, the `ThirdPersonCharacter` instance will `jump`. 
+
+Cast is extremely versatile but also quite heavy. Use `interface` instead for heavier logic.
 ## Is Player Controlled
 Checks if the object is controlled by a player (possessed), and returns a Boolean Value. Useful for functions that changes behavior depending on whether if it's triggered by a player or an NPC
 
 ## Event Dispatcher
+
+^2fc731
+
 From my understanding, event dispatchers is a "message passing" event that signals certain event has triggered, hence the envelope logo at the top right corner:
 ![[Pasted image 20240622125022.png]]
 This is useful for controlling enemy AI. Since we don't input the controls ourselves, we let the NPC get a dispatcher, and upon receiving the info, call some other event/function to process. Here's an example:
 ![[Pasted image 20240622125308.png]]
 The `DrawPhaseStarted` Event Dispatcher is defined in the Game mode blueprint. Once we receive the dispatch, we can create a custom event or connect a pre-existing event. The naming convention for this is `On{EventDispatcherName}`. Here we can see that the NPC will `Attack` after a `AttackDelay` amount of time.
 
+## Set Timer by Event
+In the main event graph, we can just use `delay` for creating delays. For functions however, this is not available. Instead, we have to use the `Set Timer by Event` node:
+![[Pasted image 20240624010513.png]]
+To activate an event after a set delay, we have to get a `create event` node from the `Event` out from `Set timer by event`, and call our event there. The `time` is where you input your desired delay time. This can be used for enemy AI controls or [[Resetting the Game]]
+
+
+
+## Play Sound
+There's two options for playing sound:
+- Play Sound at Location
+- Play Sound 2D
+The first option will give a more "roomy" feel whereas the latter will give us a flat sound.
+
 ---
-Categories: [[Unreal Engine]]
+Categories: [[Unreal Engine]], [[Enemy AI]]
 References:
 https://www.youtube.com/watch?v=4D5UfHZx_qU

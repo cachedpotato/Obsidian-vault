@@ -20,6 +20,23 @@ Then, we cast that to `PlayerController`, Pass that through what's called an `En
 
 ### Enhanced Input Local Subsystem
 
+
+
+## Possessing the character
+We've looked at a basic example of how to possess a player object above, so let's now look at a more general way of doing this.
+
+1) In the Game Mode blueprint, set the `default pawn class` to the player blueprint
+2) Under project settings, change the default game mode to the game mode blueprint we just created.
+3) In the main editor, create a new `PlayerStart` instance. It looks invisible at first, but when we test play, we can see the sprites are loaded up correctly.
+4) Now all we have is the camera. We want the camera follow the character as it moves along so we need two things:
+	- a `spring arm` to attach the camera to
+	- the camera itself
+We can set it inside our player blueprint.
+![[Pasted image 20240623131559.png]]
+5) Rotate the spring arm in the Y axis by negative 90 degrees. The camera should be facing the player now.
+6) Depending on the game we're making, we may want to disable `collision check` on the spring arm, as it can clip to collision boxes
+
+
 ---
 Categories: [[Unreal Engine]]
 References:
