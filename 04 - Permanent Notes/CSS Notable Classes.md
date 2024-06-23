@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-# CSS Quirks
+# CSS Notable Classes
 Here are some notable classes in CSS
 ## `input`
 this corresponds to `<input type = "sth">` in html.

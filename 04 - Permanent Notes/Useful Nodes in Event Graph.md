@@ -53,6 +53,8 @@ Depending on the event track, the significance of the value we set for our key f
 ![[Pasted image 20240622114547.png|500]]
 Here we passed a function `Set Sprite`, where we switch to a new sprite. This is connected to an event track in the timeline, which has a keyframe at some time $t$. This means that after $t$ much time has passed, this function will trigger and change sprite.
 
+Oh right, if the timeline is for some action that's going to be repeated over and over, _MAKE SURE THAT IT'S CONNECTED TO PLAY FROM START_, or else it'll automatically save the last state it was in and immediately start from there rather than the beginning.
+
 ## Lerp
 
 ^a8fe06
@@ -68,6 +70,13 @@ This is a rather heavy operation, so It's not recommended to hook this to someth
 
 ## Is Player Controlled
 Checks if the object is controlled by a player (possessed), and returns a Boolean Value. Useful for functions that changes behavior depending on whether if it's triggered by a player or an NPC
+
+## Event Dispatcher
+From my understanding, event dispatchers is a "message passing" event that signals certain event has triggered, hence the envelope logo at the top right corner:
+![[Pasted image 20240622125022.png]]
+This is useful for controlling enemy AI. Since we don't input the controls ourselves, we let the NPC get a dispatcher, and upon receiving the info, call some other event/function to process. Here's an example:
+![[Pasted image 20240622125308.png]]
+The `DrawPhaseStarted` Event Dispatcher is defined in the Game mode blueprint. Once we receive the dispatch, we can create a custom event or connect a pre-existing event. The naming convention for this is `On{EventDispatcherName}`. Here we can see that the NPC will `Attack` after a `AttackDelay` amount of time.
 
 ---
 Categories: [[Unreal Engine]]
