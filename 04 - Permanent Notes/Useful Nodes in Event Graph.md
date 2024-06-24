@@ -89,7 +89,7 @@ Checks if the cast is compatible to the `<actor>`. In other words, checks if wha
 - `As <Actor>`: sets command for the `Actor` that triggered this event.
 ex) `As BP_ThirdPersonCharacter > Jump > Target`: after this event is triggered, the `ThirdPersonCharacter` instance will `jump`. 
 
-Cast is extremely versatile but also quite heavy. Use `interface` instead for heavier logic.
+Cast is extremely versatile but also quite heavy. Use `interface` instead for heavier logic. `Cast to Actor` is often used for getting game modes into player blueprints.
 ## Is Player Controlled
 Checks if the object is controlled by a player (possessed), and returns a Boolean Value. Useful for functions that changes behavior depending on whether if it's triggered by a player or an NPC
 
