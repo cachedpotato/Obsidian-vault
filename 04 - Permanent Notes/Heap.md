@@ -75,6 +75,13 @@ public:
 };
 ```
 
+## Heap and k largest/smallest question
+In short, if we need the kth smallest, we need _MAX HEAP_, and if we want kth biggest, we need _MIN HEAP_.
+Because heaps are not perfectly sorted, we cannot guarantee the left child is bigger/smaller than right consistently. However, for min heap, the root will ALWAYS be the smallest, and for max heap, the root will ALWAYS be the largest. meaning, if we have a min heap of size k, the _the root will be the kth largest (smallest) element_, and vice versa. To reiterate:
+- kth largest: return _root of min heap_
+- kth smallest: return _root of max heap_
+
+
 ---
 Categories: [[Data Structure]], [[Memory Management]]
 References:
