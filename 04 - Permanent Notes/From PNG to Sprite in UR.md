@@ -30,6 +30,11 @@ If we can't see the sprite, priority may be the issue. set "Render > Translucent
 ## Loading Sprites with functionality
 If we load our sprites this way, it wouldn't have any functionality. To make sprites move, trigger animation, etc., we first need to make a [[Blueprint]] of the sprite first. Create a new blueprint with the appropriate, add `PaperSprite` then load our sprite there. Once done, we can drag and drop our blueprint onto the main editor. Make sure to change the `material` and `filter` properties as mentioned above!
 
+## Micro-Adjusting Sprite in real-time
+For more advanced games like platformers, we want a more precise way of placing sprites so that it properly touches the ground. To do this, first we need to do a test play. Then, after [[Useful Shortcuts for UR5|gaining control of the mouse]], click the character blueprint instance to get the menu like below.
+![[Pasted image 20240628183205.png]]
+Here, we can freely zoom in, and adjust position values until we get it just right. Unfortunately, adjusting values here is not permanent, so we need to copy the value and paste it in our character blueprint manually.
+
 
 ---
 Categories: [[Unreal Engine]], [[2D Game Dev]]

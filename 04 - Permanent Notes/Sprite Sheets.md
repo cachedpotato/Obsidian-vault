@@ -8,6 +8,8 @@ An example sprite sheet looks like this:
 ![[Pasted image 20240614110247.png|500]]
 This is a sprite sheet for breakout type game (where you move the platform around to bounce the ball and break bricks). Here we see various platforms, bricks, hearts, and other cool stuff. This is good and all, but how do we load things accordingly? This is just one giant PNG file, if we just load it we would have this giant blob of sprites.
 
+Sprites/tiles are what levels are comprised of in traditional 2D games. Often times, each tile has an ID assigned to differentiate their appearance or behavior. Of course, the concept of tiles is not limited to 2D games and can be extended to 3D games as well.
+
 ## Quads
 We can use the concept of `Quads` to separate this PNG file into multiple sections, and load a specific quad for some object.
 ![[Pasted image 20240614110627.png|500]]

@@ -93,6 +93,9 @@ Cast is extremely versatile but also quite heavy. Use `interface` instead for he
 ## Is Player Controlled
 Checks if the object is controlled by a player (possessed), and returns a Boolean Value. Useful for functions that changes behavior depending on whether if it's triggered by a player or an NPC
 
+## Is Moving on Ground
+Checks if the character/object is on ground or not. Useful for jump animations
+
 ## Event Dispatcher
 
 ^2fc731

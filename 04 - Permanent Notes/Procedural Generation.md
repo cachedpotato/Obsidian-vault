@@ -39,7 +39,7 @@ end
 ```
 By generating a random value, we create a random chance of that column having a certain type of column. Note that in this implementation, `chasm` types are intentionally done first because it requires some sort of early return. Also, both flat and pillar columns must generate blocks from the bottom of the screen to ground level at minimum.
 
-As mentioned in [[Tile Maps]], we can assign `id` to tiles, so that we can bring a certain type of tile when conditions are met. Here, we bring `topped` tiles, where the tiles have grass, for ground height tiles, to generate something that looks like this:
+As mentioned in [[Sprite Sheets]], we can assign `id` to tiles, so that we can bring a certain type of tile when conditions are met. Here, we bring `topped` tiles, where the tiles have grass, for ground height tiles, to generate something that looks like this:
 ![[29feedaa5cff8e2b7fa479f3350bcb91.jpg|500]]
 See how all tiles that have nothing directly above have grass on them? this is what the code does above, just for the ground level.
 

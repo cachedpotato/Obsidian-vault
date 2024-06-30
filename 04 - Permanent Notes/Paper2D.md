@@ -13,7 +13,7 @@ A Collection of images to create animation, just like the name suggests.
 ## Sprite
 Asset that allows us to display 2D images in the game world
 ## Tile Set
-Set of tiles that's been extracted from a texture or a [[Sprite Sheets |sprite map]]. 
+Set of tiles that's been extracted from a texture or a [[Sprite Sheets |sprite sheet]]. 
 ## Tile Map
 Uses 2D grid and the Tile set as the paint to create levels.
 
