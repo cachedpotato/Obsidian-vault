@@ -81,6 +81,11 @@ SELECT MAX(price) FROM database;
 SELECT UPPER(languages) FROM database as capitalizedLanguages;
 ```
 7) LOWER: change text into lowercase
+8) SUM: Sum of values
+```SQL
+SELECT SUM(Price) FROM database
+WHERE Country = "Germany";
+```
 
 ...The list goes on. We can also mix call functions within functions, such as `SELECT COUNT(DISTINCT(column)) FROM database`. The example here will give us the total number of unique entries in column `column`.
 
@@ -96,9 +101,20 @@ Note that if queries get too long we can split it with newlines.
 SELECT languages FROM database
 WHERE country = "Korea";
 ```
-eww...Single quotes for comparisons...
+_SQL USES SINGLE EQUATIONS FOR COMPARISONS!_
+To add multiple conditions, use `ADD` or `OR`.
+```SQL
+SELECT languages FROM database
+WHERE country="Korea" AND population >= 1000000;
+```
 
-2) LIKE: used to search _patterns_. Rules include:
+2) NOT
+```SQL
+SELECT * FROM database
+WHERE NOT City = "Berlin"; 
+```
+
+4) LIKE: used to search _patterns_. Rules include:
 - `%` represent 0 or more characters
 - `_` represent single character
 ```SQL
@@ -112,7 +128,26 @@ WHERE language LIKE "C%";
 | C#         |  5         |
 +------------+------------+
 ```
-
+NOT Operator can be applied:
+```SQL
+SELECT language, frequency FROM database
+WHERE language NOT LIKE "C%";
+```
+As well as grouping values!
+```SQL
+SELECT language, frequency FROM database
+WHERE language LIKE "[abc]%b_thon";
+```
+This will choose entries that starts with a, b or c, then the rest of the conditional. Like in Regex, ranges work as well.
+```SQL
+SELECT language, frequency FROM database
+WHERE language LIKE "[a-f]%b_thon";
+```
+To _exclude_ letters/numbers in groups, put `!` within the brackets:
+```SQL
+SELECT language, frequency FROM database
+WHERE language LIKE "[!acf]%b_thon";
+```
 
 3) ORDER BY: sort the returned table by given column's values
 ```SQL
@@ -135,6 +170,48 @@ WHERE condition LIKE "pattern"
 GROUP BY column3
 ORDER BY column4;
 ```
+
+6) IN: Just like the python's `in` syntax. Checks if a column value is within the given list.
+```SQL
+SELECT column1, column2 FROM database
+WHERE column1 in ("Name1", "Name2", "Name3");
+```
+Unlike the `LIKE` operator where we used `[]`, we use `()` here. Of course, `NOT` can be applied here too:
+```SQL
+SELECT column1, column2 FROM database
+WHERE column1 NOT IN ("Name1", "Name2", "Name3");
+```
+
+7) BETWEEN: For selecting values within a set range. Uses `BETWEEN x AND y` syntax. Note that both start and end is inclusive so `BETWEEN 10 AND 20` means 10 to 20 inclusive.
+```SQL
+Select column1, column2 FROM database
+WHERE column3 BETWEEN 30 AND 40;
+```
+
+```SQL
+Select column1, column2 FROM database
+WHERE column3 NOT BETWEEN 30 AND 40;
+```
+Cool part about this is that we can use string values as well
+```SQL
+Select column1, column2 FROM database
+WHERE column3 BETWEEN "Banger" AND "Tweet";
+```
+
+8) AS: Creates an Alias
+```SQL
+Select column1, column2, column3 from database
+where column3 LIKE "A_[b-f]%d" AS randomView;
+```
+
+### Null
+Instead of equal sign, we use `IS NULL` for checking if a certain value is null
+```SQL
+SELECT * FROM database
+WHERE Country is NULL;
+```
+
+
 ---
 Categories: [[CS50 - Introduction]], [[Database]], [[SQL]]
 References:
