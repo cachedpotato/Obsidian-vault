@@ -113,6 +113,12 @@ WHERE country="Korea" AND population >= 1000000;
 SELECT * FROM database
 WHERE NOT City = "Berlin"; 
 ```
+For every condition that needs the `NOT` clause, we need to add one at the front of said condition.
+```SQL
+SELECT * FROM database
+WHERE NOT City = "Berlin" AND
+NOT City = "Seoul";
+```
 
 4) LIKE: used to search _patterns_. Rules include:
 - `%` represent 0 or more characters
@@ -204,6 +210,17 @@ Select column1, column2, column3 from database
 where column3 LIKE "A_[b-f]%d" AS randomView;
 ```
 
+9) CASE: Views created with `WITH` cannot be used within CASE statements nor can we make aliases within an arm.
+```SQL
+SELECT
+	CASE
+		WHERE Name IN ("John", "Katie") THEN "Hi"
+		WHERE Name IN ("Bob", "Jason") THEN "Hello"
+		ELSE "Howdy"
+	END
+FROM database
+ORDER BY Name ASC;
+```
 ### Null
 Instead of equal sign, we use `IS NULL` for checking if a certain value is null
 ```SQL
