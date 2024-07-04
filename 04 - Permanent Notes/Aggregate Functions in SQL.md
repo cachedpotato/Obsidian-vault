@@ -7,7 +7,6 @@ Aggregate Functions will give aggregated results of column(s), such as average o
 SELECT AVG(Price) FROM FruitPrice
 GROUP BY Country;
 ```
-
 ## COUNT
 Returns the number of rows
 ```SQL
@@ -28,13 +27,22 @@ Returns the minimum/maximum value of a given column.
 SELECT MIN(Price), MAX(Price) FROM FruitPrices
 GROUP BY Country;
 ```
-
 ## HAVING Clause
 The `WHERE` equivalent for aggregate functions is the `HAVING` clause.
 ```SQL
 SELECT MAX(Price) FROM FruitPrices
 GROUP BY Country
 HAVING COUNT(Fruit) > 3;
+```
+## Aggregate Functions with Conditionals
+You can add CASE statements within Count for conditional counting:
+```SQL
+SELECT
+	ad_id,
+	COUNT(CASE WHEN event_type = "impression" THEN 1 ELSE NULL END) AS i,
+	SUM(CASE WHEN event_type = "click" THEN 1 ELSE 0 END) AS c
+FROM
+	table1;
 ```
 
 

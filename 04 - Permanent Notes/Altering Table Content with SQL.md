@@ -30,7 +30,7 @@ MODIFY column1 Char(255);
 
 If we want to change the name as well, we need to use the `CHANGE` keyword:
 ```SQL
-ALTER TABLE table
+ALTER TABLE table1
 CHANGE name nm VARCHAR(15);
 ```
 ## Drop Column

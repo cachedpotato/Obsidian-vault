@@ -209,6 +209,20 @@ WHERE column3 BETWEEN "Banger" AND "Tweet";
 Select column1, column2, column3 from database
 where column3 LIKE "A_[b-f]%d" AS randomView;
 ```
+You can't use the alias when it's first being defined. That is, we can't both define aliases in the SELECT clause and use it somewhere in the WHERE statement or the FROM statement, because SQL actually computes SELECT last!
+```SQL
+-- THIS IS NOT POSSIBLE
+SELECT
+	SUM(column1) AS colSum,
+	column2,
+	column3
+FROM
+	table1
+WHERE
+	colSum > 10
+GROUP BY
+	column1;
+```
 
 9) CASE: Views created with `WITH` cannot be used within CASE statements nor can we make aliases within an arm.
 ```SQL

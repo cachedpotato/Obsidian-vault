@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-# Window Functions
+# Window Functions in SQL
 Window Functions act similar to aggregate functions, except that the resulting table will _NOT_ be a summarized table. Instead, the result will be cast to individual rows.
 ![[sql-window-functions.png]]
 
