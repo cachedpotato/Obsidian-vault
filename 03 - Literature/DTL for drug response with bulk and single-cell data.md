@@ -12,7 +12,7 @@ Link:
 - Drug screening data from massive bulk gene expression DB can be analyzed to determine optimal clinical application of cancer drugs
 - scRNA-seq provides insights into improving therapeutic effectiveness
 - scRNA-seq helps the study of heterogeneity of drug responses
-- scDEAL: harmonization of bulk and single-cell RNA-seq data
+- scDEAL: harmonization of bulk and single-cell *RNA*seq data
 - Integrated gradient feature interpretation to infer the signature genes 
 
 ## Main Body

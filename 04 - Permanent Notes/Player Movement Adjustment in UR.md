@@ -20,6 +20,13 @@ Because in Unreal Engine, the player hitbox is a capsule, at the ledge the playe
 To make the camera slightly go behind the player for a more dynamic look, from `spring arm` check `Enable Camera Lag`. we can adjust how much it lags with `Camera Lag Speed.`
 ![[Pasted image 20240628185847.png]]
 
+## Constraint To Plane
+Unreal engine assumes all games to be in 3d, so the characters will be able to move in all 3 axis direction. This means that whenever a collision happens, there's a chance objects will move in the y axis and fall off our map!
+To prevent this, we need to set the `constraint to plane` option in the `character movement` section to true, and increase the `plane constraint normal` value to 1 for the axis we don't want the characters to be moving.
+![[Pasted image 20240705183613.png]]
+Now our characters will be only moving in x and z axis.
+
+
 
 ---
 Categories: [[Unreal Engine]], [[020-Game Development]]

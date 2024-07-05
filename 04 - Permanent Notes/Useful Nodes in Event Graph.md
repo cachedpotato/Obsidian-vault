@@ -97,9 +97,7 @@ Checks if the object is controlled by a player (possessed), and returns a Boolea
 Checks if the character/object is on ground or not. Useful for jump animations
 
 ## Event Dispatcher
-
 ^2fc731
-
 From my understanding, event dispatchers is a "message passing" event that signals certain event has triggered, hence the envelope logo at the top right corner:
 ![[Pasted image 20240622125022.png]]
 This is useful for controlling enemy AI. Since we don't input the controls ourselves, we let the NPC get a dispatcher, and upon receiving the info, call some other event/function to process. Here's an example:
