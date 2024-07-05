@@ -45,6 +45,35 @@ FROM
 	table1;
 ```
 
+## Caution on GROUP BY
+When we use `GROUP BY`, we need to make sure that all the columns we want to return in the `SELECT` statement is "affected" by this grouping. For example,
+```SQL
+SELECT
+	ID,
+	MAX(column1) AS MAXC1,
+FROM
+	table1
+GROUP BY
+	column2;
+```
+Will _NOT_ work because SQL doesn't know what ID to show when grouped by column2. Normally we'd want it to be the ID where the max value resides, but SQL does not assume in such ways.
+In cases like these, [[Window Functions in SQL|Partitioning]] would be a better option:
+```SQL
+SELECT
+	ID,
+	column1
+FROM
+	SELECT
+		ROW_NUMBER() OVER(PARTITION BY column2 ORDER BY column1 DESC) as rank
+		ID
+	FROM table1
+AS tmp
+WHERE
+	rank = 1;
+	--This would be the one with the highest column1 value per column2 partitions
+	
+		
+```
 
 
 ---
