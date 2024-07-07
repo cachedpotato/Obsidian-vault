@@ -21,7 +21,8 @@ tone curve: 0 (closest to original)
 
 
 ## Controls related
-`flat based for floor checks`
+Refer to [[Player Movement Adjustment in UR]] for more details
+`flat based for floor checks`: for more 2D-like ledge detection and falling.
 
 `constrain to plane`: We do not want for the player to move in y axis. setting the value to 1 will completely block the player from moving to that direction.
 

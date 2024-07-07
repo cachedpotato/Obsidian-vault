@@ -32,7 +32,7 @@ We've looked at a basic example of how to possess a player object above, so let'
 	- a `spring arm` to attach the camera to
 	- the camera itself
 We can set it inside our player blueprint.
-![[Pasted image 20240623131559.png]]
+![[Pasted image 20240623131559.png]] ^cb5ba8
 5) Rotate the spring arm in the Y axis by negative 90 degrees. The camera should be facing the player now.
 6) Depending on the game we're making, we may want to disable `collision check` on the spring arm, as it can clip to collision boxes.
 

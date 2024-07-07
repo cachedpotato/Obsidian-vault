@@ -109,7 +109,13 @@ In the main event graph, we can just use `delay` for creating delays. For functi
 ![[Pasted image 20240624010513.png]]
 To activate an event after a set delay, we have to get a `create event` node from the `Event` out from `Set timer by event`, and call our event there. The `time` is where you input your desired delay time. This can be used for enemy AI controls or [[Resetting the Game]]
 
+## Add Call to Parent Function
+This will be used for all child instances where we want to do some extra, child-exclusive logic not present in parent's function. 
+![[Pasted image 20240707000521.png]]
 
+
+## Launch Character
+Used to launch characters in set direction.
 
 ## Play Sound
 There's two options for playing sound:

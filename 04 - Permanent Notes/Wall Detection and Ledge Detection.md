@@ -14,6 +14,8 @@ First things first, let's make the enemy (pig in this case) move forward by defa
 Next, we add a `Box collision` as a child of our capsule component and set it in front of the enemy sprite:
 ![[Pasted image 20240705234544.png]]
 
+For collision preset, we need to use a `custom`preset that will ignore all collision boxes except for `WorldStatic`, which quite literally stands for collision boxes that are static in current map, which include wall, floor, etc.
+![[Pasted image 20240706234423.png]]
 We Then call the `On Component Begin Overlap` function on our event graph, and create custom function `Rotate Char`, which goes something like this:
 ```C++
 BoxCollision WallDetector;

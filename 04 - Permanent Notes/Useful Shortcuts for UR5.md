@@ -9,6 +9,7 @@ tags:
 `W`: Select and Translate (Move objects)
 `E`: Select and Rotate
 `R`: Select and scale
+`F`: Zoom towards selected element
 
 `<C-SPACE>`: Open up content drawer
 `<A-P>`: Begin Test Play
