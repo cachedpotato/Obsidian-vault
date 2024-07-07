@@ -26,6 +26,9 @@ Sets the min/max possible value of a variable
 Self explanatory. Get/sets the relative location. We can store this as a variable then pass it to something else.
 
 ## Get Flipbook
+
+^d18170
+
 Useful for changing flipbook based on a certain condition. For example, we may want to dynamically change the running animation's play rate depending on the current length of the velocity, but not necessarily for idle animation. We can do logic akin to:
 ```c++
 void setPlayRate(player) {
@@ -110,6 +113,9 @@ In the main event graph, we can just use `delay` for creating delays. For functi
 To activate an event after a set delay, we have to get a `create event` node from the `Event` out from `Set timer by event`, and call our event there. The `time` is where you input your desired delay time. This can be used for enemy AI controls or [[Resetting the Game]]
 
 ## Add Call to Parent Function
+
+^1b4fef
+
 This will be used for all child instances where we want to do some extra, child-exclusive logic not present in parent's function. 
 ![[Pasted image 20240707000521.png]]
 

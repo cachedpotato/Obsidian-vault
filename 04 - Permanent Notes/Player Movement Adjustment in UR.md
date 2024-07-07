@@ -27,6 +27,19 @@ To prevent this, we need to set the `constraint to plane` option in the `charact
 ![[Pasted image 20240705183613.png]]
 Now our characters will be only moving in x and z axis.
 
+## Launch Character
+Launches character in customizable vector. 
+![[Pasted image 20240707104455.png]]
+The `override` options will completely overwrite current velocity to the launch velocity, instead of addition operation. For example, without override:
+$$
+v(player) = v(player) + v(launch)
+$$
+would be the default option, but with override:
+$$
+v(player) = v_{x}(player) + v_{y}(player) + v_{z}(launch)
+$$
+if we have the `Z override` option set to true.
+
 
 
 ---
