@@ -49,6 +49,6 @@ valgrind ./program
 ```
 
 ---
-Categories: [[C/C++]], [[Memory Management]], [[CS50 - Introduction]]
+Categories: [[C++]], [[Memory Management]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-13

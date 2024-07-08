@@ -23,6 +23,6 @@ While yes you CAN access this, it's best to always access only the characters we
 
 
 ---
-Categories: [[C/C++]], [[Data Types]], [[CS50 - Introduction]]
+Categories: [[C++]], [[Data Types]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-13

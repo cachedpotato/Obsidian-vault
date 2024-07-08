@@ -55,7 +55,7 @@ void TraceForPlatform(self) {
 			//what objects to search for
 			[OneWayCollision],
 			ignoreSelf = True
-		) && playerMovement.vector.z < 0 //falling) {
+		) && playerMovement.velocity.z < 0 //falling) {
 			setCollisionResponseToChannel(
 				CapsuleComponent,
 				OneWayCollision,

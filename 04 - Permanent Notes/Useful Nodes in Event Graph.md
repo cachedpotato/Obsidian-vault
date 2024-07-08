@@ -18,7 +18,6 @@ If we have a switch/branch that connects to the same function, instead of copy p
 ## Flip Flop
 Will alternate between two inputs. Inputs can be events as well.
 
-
 ## Clamp
 Sets the min/max possible value of a variable
 
@@ -43,9 +42,7 @@ to do this in event graph, we need some sort of way to grab the current sprite a
 ![[Pasted image 20240623171120.png]]
 
 ## Timeline
-
 ^084440
-
 Timeline node allows values to be keyframed over time. There are three outputs:
 - Update
 - Finished
@@ -70,9 +67,7 @@ Here we passed a function `Set Sprite`, where we switch to a new sprite. This is
 Oh right, if the timeline is for some action that's going to be repeated over and over, _MAKE SURE THAT IT'S CONNECTED TO PLAY FROM START_, or else it'll automatically save the last state it was in and immediately start from there rather than the beginning.
 
 ## Lerp
-
 ^a8fe06
-
 Lerp stands for "Linear Interpolation". We input A, B and Alpha, which serves as a parameter that acts as the mediator. To reuse the image I made before:
 ![[Pasted image 20240621221359.png|450]]
 Here, the `t` serves the same purpose as alpha in lerp. 
@@ -113,9 +108,7 @@ In the main event graph, we can just use `delay` for creating delays. For functi
 To activate an event after a set delay, we have to get a `create event` node from the `Event` out from `Set timer by event`, and call our event there. The `time` is where you input your desired delay time. This can be used for enemy AI controls or [[Resetting the Game]]
 
 ## Add Call to Parent Function
-
 ^1b4fef
-
 This will be used for all child instances where we want to do some extra, child-exclusive logic not present in parent's function. 
 ![[Pasted image 20240707000521.png]]
 

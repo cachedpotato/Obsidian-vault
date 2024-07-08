@@ -68,5 +68,5 @@ Reimu had a good life
 Note that the latest object created is freed first because as we've talked before, computer stores memory using [[Stack|stacks]], and stacks are LIFO. Also Note that destructors are called automatically when the object goes out of scope.
 
 ---
-Categories: [[C/C++]]
+Categories: [[C++]]
 References:

@@ -50,6 +50,6 @@ void swap(int* x, int* y) {
 See how the function takes a _REFERENCE_ to the values? this is called _passing by reference_. If we want to change the values stored in that memory, we need to pass them by reference, and mutate the value within the function via dereferencing.
 
 ---
-Categories: [[C/C++]], [[CS50 - Introduction]]
+Categories: [[C++]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-13

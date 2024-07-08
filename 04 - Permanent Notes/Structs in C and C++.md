@@ -21,6 +21,6 @@ struct {
 ```
 
 ---
-Categories: [[C/C++]], [[CS50 - Introduction]]
+Categories: [[C++]], [[CS50 - Introduction]]
 References:
 Created: 2024-06-13

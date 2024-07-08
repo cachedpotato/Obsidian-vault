@@ -6,7 +6,7 @@ tags:
 
 ## List of Programming Languages
 - [[011-Rust]]
-- [[C/C++]] 
+- [[C++]] 
 - [[JavaScript]]
 
 ## Non Turing-Complete/Markup Languages
