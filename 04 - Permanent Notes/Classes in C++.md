@@ -15,12 +15,12 @@ public:
 	std::string phone_number;
 
 	void sayHi(Human to, Human from);
-	bool isLoner(self) {
-		if (self.social_tier() < 5) {return true;}
+	bool isLoner() {
+		if (social_tier(name, friend_count) < 5) {return true;}
 	}
 private:
-	int social_tier(self);
-	int total_earnings(self);
+	int social_tier();
+	int total_earnings();
 }
 void Human::sayHi(std::string to, std::string from) {
 	std::cout << from.name << "says hi to " << to.name << std::endl;
@@ -36,6 +36,10 @@ We can also see that class methods can be both defined _internally_ inside the c
 classes in C++ can have custom constructor and destructor with the following functions: `ClassName()` and `~ClassName()`:
 ```C++
 class Human {
+private:
+	std::string name;
+	int friend_count;
+	std::string phone_number;
 public:
 	Human(std::string name, int friend_count) {
 		name = name;
@@ -46,7 +50,7 @@ public:
 	}
 
 	~Human() {
-		std::cout << self.name << " had a good life." << std::endl;
+		std::cout << name << " had a good life." << std::endl;
 	}
 }
 

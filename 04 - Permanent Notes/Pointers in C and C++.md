@@ -32,6 +32,21 @@ int main(void) {
 ```
 
 ## The `->` operator
+The `->` is a member access operator for objects behind a pointer. Technically this is the same as doing `(*a).method()` on pointers. 
+```c++
+struct Node {
+	int val;
+	Node* next;
+
+	Node(): val(0), next(nullptr) {}
+	Node(int x): val(x), next(nullptr) {}
+}
+int main() {
+	Node* myNode(1);
+	std::cout << myNode -> val << std::endl;
+	std::cout << (*myNode).val << std::endl; //same value
+}
+```
 
 
 ---
