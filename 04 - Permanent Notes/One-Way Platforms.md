@@ -35,7 +35,7 @@ Create a basic `Actor` blueprint for our platform. We don't need to add any logi
 
 ## Step 3. Character Collision Options
 ![[Pasted image 20240707214233.png]]
-Next, we need to set our collision options for our player character. Set the `Capsule Component`'s collision for our player to `custom - Collision Enabled (Query and Physics) - Pawn`. Set the `OneWayPlatform`'s default collision response to `Overlap`. 
+Next, we need to set our collision options for our player character. Set the `Capsule Component`'s collision for our player to `custom - Collision Enabled (Query and Physics) - Pawn`. Set the `OneWayPlatform`'s default collision response to `Overlap`.  ^731ddc
 
 ## Step 4.1 Setting Scene for Line Trace
 Before we use the `Line Trace For Objects` Node, we first need to add a `Scene` component that will be used as the detector and as the starting point of our tracing.

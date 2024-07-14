@@ -16,5 +16,5 @@ Luckily, Unreal Engine has both `Walking on Ledge` event node and `Retriggerable
 
 
 ---
-Categories: [[Unreal Engine]], [[Player Movement Adjustment in UR]], [[2D Game Dev]]
+Categories: [[Unreal Engine]], [[Player Movement Adjustment in UR]], [[2D Game Dev]], [[Jump]]
 References:

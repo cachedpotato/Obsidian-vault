@@ -122,6 +122,9 @@ There's two options for playing sound:
 - Play Sound 2D
 The first option will give a more "roomy" feel whereas the latter will give us a flat sound.
 
+## Set Collision Response To Channel
+Used to update collision response depending on collision channel, as can be seen through the example of [[One-Way Platforms]].
+
 ---
 Categories: [[Unreal Engine]], [[Enemy AI]]
 References:

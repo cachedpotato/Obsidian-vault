@@ -52,7 +52,7 @@ With [[PaperZD State Machines]], we can add death animation quite easily. There 
 Fret not - PaperZD's creator has already though of this, and provided us with the very useful `Jump` state:
 ![[Pasted image 20240707012316.png]]
 Using jumps we can "bypass" the state machine and jump to the connected animation from our main event graph, using `Get Anim Instance` and `Jump To Node` node:
-![[Pasted image 20240707012448.png]]
+![[Pasted image 20240707012448.png]] ^883e5c
 
 ---
 Categories: [[Enemy AI]], [[020-Game Development]]

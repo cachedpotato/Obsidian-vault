@@ -18,5 +18,5 @@ There are multiple ways to add jump buffer, but this method is by far the easies
 
 
 ---
-Categories: [[020-Game Development]], [[Player Movement Adjustment in UR]]
+Categories: [[020-Game Development]], [[Player Movement Adjustment in UR]], [[Jump]]
 References:
