@@ -95,6 +95,9 @@ Checks if the object is controlled by a player (possessed), and returns a Boolea
 Checks if the character/object is on ground or not. Useful for jump animations
 
 ## Event Dispatcher
+
+^66c2bc
+
 ^2fc731
 From my understanding, event dispatchers is a "message passing" event that signals certain event has triggered, hence the envelope logo at the top right corner:
 ![[Pasted image 20240622125022.png]]

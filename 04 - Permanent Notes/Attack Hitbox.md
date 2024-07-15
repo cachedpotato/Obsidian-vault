@@ -20,7 +20,7 @@ This can be done pretty easily. As input we will take a Boolean Value `Set Activ
 There are multiple ways of using this function. We can just add this function in our `IA_Attack` event, but using it inside Animation Source is more manageable with notifies.
 To do this, first we need to create a custom notify state.
 ![[Pasted image 20240714173519.png]]
-Inside this blueprint, there are 4 overridable functions: 
+Inside this blueprint, there are 4 overridable functions:  ^8b0a82
 - `OnNotifyBegin`: Run when notify begins
 - `OnNotifyEnd`: Run as notify ends
 - `OnNotifyTick`: Run every frame during the notification

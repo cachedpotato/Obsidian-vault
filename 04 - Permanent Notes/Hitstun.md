@@ -39,6 +39,13 @@ Since this is a function, we can't call the `delay` node, hence the need for `se
 So far we have the animation logic set up for going _into_ hitstun, but not _out of_ it. All we need to do is add a simple check to the `Stunned -> idle` state logic if we're out of the `IsStunned` state:
 ![[Pasted image 20240714192832.png]]
 
+## Step 5. Disable movement during hitstun
+During hitstun, the player should not be able to move. in `IA_Move`, we need to add a branch condition that checks if we're able to move, such as:
+- If we're in a hitstun
+- If we're attacking
+- If we died
+![[Pasted image 20240715200350.png]]
+
 
 ---
 Categories: [[Player Attack]], [[020-Game Development]], [[PaperZD]], [[Attack Hitbox]]
