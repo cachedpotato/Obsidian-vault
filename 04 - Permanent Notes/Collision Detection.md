@@ -43,6 +43,10 @@ func _on_area_entered(area):
 ```
 
 
+## Advanced Collision Detection mechanism for game engines
+Game engines, such as [[Collision Detection related settings in Unreal Engine|Unreal Engine]] or [[Collision Detection System in Godot|Godot]] offer more than just having a collision box and bare-bones detection mechanism. For example in Unreal engine there are a plethora of events related to how the Collision box interacts to other object types, such as `On Event Begin Overlap` or `On Event Hit`.
+
+
 
 ---
 Categories: [[020-Game Development]], [[CS50 - Game]]

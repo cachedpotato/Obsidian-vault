@@ -23,6 +23,9 @@ tags:
 `<C-Drag Varaible>`: place the `GETTER` in the graph
 `<ALT-Drag Variable>`: Place the `SETTER` in the graph
 `<B-LEFT CLICK>`: Create `Branch` node
+`(After Selecting Nodes) C`: Create `Comment`
+
+`<4 - LMB>`: Create Color picker node (Material Blueprint)
 
 
 ---

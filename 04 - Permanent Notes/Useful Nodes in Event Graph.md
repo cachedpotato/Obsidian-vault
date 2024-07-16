@@ -1,5 +1,6 @@
 ---
 tags:
+  - MaySplit
 ---
 # Useful Nodes in Event Graph
 ## Branch
@@ -42,6 +43,7 @@ to do this in event graph, we need some sort of way to grab the current sprite a
 ![[Pasted image 20240623171120.png]]
 
 ## Timeline
+^1e3a9e
 ^084440
 Timeline node allows values to be keyframed over time. There are three outputs:
 - Update
@@ -76,6 +78,8 @@ Here, the `t` serves the same purpose as alpha in lerp.
 ## Get Actor of Class
 This is a rather heavy operation, so It's not recommended to hook this to something like `Event Tick`. This is used for creating a reference of something that is outside of the current blueprint. For example, if we want some value within BP 1 to control a function in BP 2, we can use this node, set the `Actor Class` to the function we want to reference, and promote the output to a variable, like so:
 ![[Pasted image 20240621235012.png]]
+
+## Spawn Actor of Class
 
 ## `Destroy Actor`
 Destroys `self`. 

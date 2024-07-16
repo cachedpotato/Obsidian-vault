@@ -28,5 +28,5 @@ We still have one more problem we need to manage. We want the enemy to start mov
 To check if everything's working, pressing `ALT + P` will simulate game in a small window, and show blackboard values on the bottom right.
 
 ---
-Categories: [[Blackboard in Unreal Engine]], [[Hitstun]], [[Player Aggro]]
+Categories: [[Blackboard in Unreal Engine]], [[Hitstun]], [[Player Aggro]], [[Enemy AI]]
 References:
