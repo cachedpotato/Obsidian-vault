@@ -18,6 +18,13 @@ for $-\infty<y<\infty$,
 $$
 \sum_{y}p_{Y}(y) = 1
 $$
+
+For probability density function, its integral over the left end to some value $x$ is the value of its [[Random Variable#^4367b7|cumulative distribution function]].
+$$
+\int_{-\infty}^xf_{X}(x)dx = F_{X}(x)
+$$
+
+
 ---
 Categories: [[Probability Theory]], [[050-Statistics]]
 References:

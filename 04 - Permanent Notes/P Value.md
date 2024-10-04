@@ -6,7 +6,7 @@ The formal (by formal I mean Wikipedia) definition of p value is as follows:
 
 > The p value is the probability of obtaining test results as extreme as the result actually observed, under the assumption the null hypothesis is correct.
 
-In other words, p value measures the "extremity" of a given observation. If an observation has a p value of 0.05, it means there's 5% chance it would've occurred under the [[Hypothesis |null hypothesis]].
+In other words, p value measures the "extremity" of a given observation. If an observation has a p value of 0.05, it means there's 5% chance it would've occurred under the [[Statistical Hypothesis|null hypothesis]].
 
 ## Definition
 Consider an observed test statistic $t$ from an unknown distribution $T$. The p value $p$ is what the [[Prior Probability|prior probability]] would be of observing a statistic as extreme as $t$.
@@ -23,7 +23,7 @@ $$
 p = 2min(Pr(T > t | H_{0}), Pr(T < t|H_{0}))
 $$
 
-From the definitions above we can see a strong relation with p value and the [[Cumulative Distribution Function|cumulative distribution function]] of the test statistic, which becomes even clearer if we look at the visualization below:
+From the definitions above we can see a strong relation with p value and the [[Random Variable#^4367b7|cumulative distribution function]] of the test statistic, which becomes even clearer if we look at the visualization below:
 
 ![[p-value.jpg]]
 

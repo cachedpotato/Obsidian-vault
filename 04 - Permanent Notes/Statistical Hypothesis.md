@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-# Hypothesis
+# Statistical Hypothesis
 In statistics, every conjecture concerning the unknown probability distribution of a collection of [[Random Variable|random variables]] representing the observed data $X$ is called a _statistical hypothesis_. 
 
 ## Null Hypothesis
