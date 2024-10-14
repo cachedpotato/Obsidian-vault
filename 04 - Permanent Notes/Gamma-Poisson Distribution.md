@@ -10,7 +10,7 @@ Because its variance, $\lambda$, is not independent of its mean which is the sam
 $$
 Var(X) = E(X) = \lambda
 $$
-This can be troublesome for data that can have data within replicates (trials). For example, biological count data may seem apt for a normal [[Poisson Distribution]] - But more often than not this type of data vary more than what the Poisson distribution predicts. First let's look at how we'd model count data with replicate experiments using the Poisson distribution. let $n_i$ be number of fragments for gene $i$. Given a random sample of $r$ sequences from the entire library, the probability of a fragment being gene $i$ would be:
+This can be troublesome for data that can have differences within replicates (trials). For example, biological count data may seem apt for a normal [[Poisson Distribution]] - But more often than not this type of data vary more than what the Poisson distribution predicts. First let's look at how we'd model count data with replicate experiments using the Poisson distribution. let $n_i$ be number of fragments for gene $i$. Given a random sample of $r$ sequences from the entire library, the probability of a fragment being gene $i$ would be:
 $$
 \begin{align}
 n &= n_{1} + n_{2} + \dots + n_{k}, \\
