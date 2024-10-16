@@ -11,7 +11,7 @@ This is troublesome for regression tasks, as regression normally assume _homoske
 
 To mitigate this problem, we need some sort of preprocessing to our data to make the variance consistent. This is called **variance stabilizing transformation**.
 
-## Applying VST
+## Applying VST with delta method
 Transformations are essentially functions we apply to our [[Random Variable|random variables]]. What functions to apply will differ based on the variable's distribution, but they can be figured out using the _delta method_.
 
 Let $g$ be our differentiable transformation function. This function must assure the variance stays consistent within our data space of random variables $X_{i}$, with means $\mu_{i}$ variances $v_{i}$. Assume means and variances are related by a functional relationship $v_{i} = v(\mu _{i})$.
@@ -39,7 +39,6 @@ Let's use the equation above to find the appropriate transformations for various
 1) Poisson distribution
 $$
 \begin{align}
-Pois(x;\lambda) &= \frac{e^{-\lambda}\lambda^k}{k!} \\
 v(\mu) &= \mu \\
 g(x) &= \int \frac{1}{\sqrt{ v(x) }}dx \\
 &=\int \frac{1}{\sqrt{ x }}dx \\
@@ -74,7 +73,7 @@ This stabilizing function has interesting properties:
 
 Looking at the variance of the Gamma-Poisson Distribution, we can get an intuitive explanation:
 
-For lower values of $x$, the noise is insignificant enough to assume the variable follows a Poisson distribution, whereas for higher values of x the overdispersion effect takes over and much of the variance comes from noise.
+For lower values of $x$, the noise is insignificant enough to assume the variable follows a Poisson distribution, whereas for higher values of x the overdispersion effect takes over and much of the variance is explained by noise.
 
 
 ---

@@ -21,9 +21,7 @@ There are two types of random variables.
 2. Continuous random variable: $X$ can take any value from a continuous range. For example, an average person's height can take any value from around 150 to 200.
 
 ## Functions of Random Variable
-
 ^4367b7
-
 As can be seen from the image above, Given a random variable $X$ defined by probability triple $(\Omega, \mathcal F, P)$, we can ask question such as "What is the probability of X being 3?". This can be written in a multitude of ways:
 - $P(\{\omega \in \Omega | X(\omega) = 2\})$
 - $\{\omega: X(\omega) =  2\}$
