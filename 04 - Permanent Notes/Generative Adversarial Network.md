@@ -51,13 +51,31 @@ D^*_{G}(x) = \frac{p_{data}(x)}{p_{data}(x) + p_{g}(x)}
 $$
 
 ### 4. Global minimum of training criterion C(G)
+Now that we found the optimal discriminator, now it's time to find the optimal generator. By intuition, we can see that the best generator will be the one generating data that is **identical** to the real data, that is,
 $$
-\begin{align} \\
-C(G) &= \max_{D}V(G,D) \\
-&= \mathbb{E}_{x \sim p_{data}}[\log(D^{*}_{G}(x))] + \mathbb{E}_{x \sim p_{g}}[\log(1 - D^{*}_{G}(x))]  \\
-&= \mathbb{E}_{x \sim p_{data}}[\log(\frac{p_{data}(x)}{p_{data}(x) + p_{g}(x)})] + \mathbb{E}_{x \sim p_{g}}[\log(\frac{p_{g}(x)}{p_{data}(x) + p_{g}(x)})]
+p_{data}(x) = p_{g}(x)
+$$
+This essentially makes the generator a random coin flip:
+$$
+\begin{align}
+D^*_{G}(x) &= \frac{p_{data}(x)}{p_{data}(x) + p_{g}(x)} \\
+&= \frac{p_{data}(x)}{p_{data}(x) + p_{data}(x)}  \\
+&= \frac{1}{2}
 \end{align}
 $$
+
+Now let's see if this is actually the case. First, let's assume we have $p_g$ identical to $p_{data}$. Then,
+$$
+\begin{align}
+C(G) = \max V(G,D) &= \int p_{data}\log\left( \frac{1}{2} \right) +p_{g}\log\left( 1 -\frac{1}{2} \right) dx \\
+&= -\log(2)\int p_{data}dx  -\log(2)\int p_{g}(x)dx \\
+&= -2\log(2)
+\end{align}
+$$
+
+
+
+
 
 
 
