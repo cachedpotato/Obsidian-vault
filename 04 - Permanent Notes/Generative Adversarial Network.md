@@ -73,15 +73,50 @@ C(G) = \max V(G,D) &= \int p_{data}\log\left( \frac{1}{2} \right) +p_{g}\log\lef
 \end{align}
 $$
 
+Rearranging the Value Function equation (extracting $-\log4$) gives:
+$$
+\begin{align} \\
+C(G) &=\int_{x}p_{data}(x)\log(D(x)) + p_{g}(x)\log(1-D(x))dx  \\
+&= \int_{x}p_{data}(x)\log\left( \frac{p_{data}(x)}{p_{data}(x) + p_{g}(x)} \right)+ p_{g}(x)\log\left( \frac{p_{g}(x)}{p_{data}(x) + p_{g}(x)} \right)dx  \\
+&= \int_{x}p_{data}(x)(\log\left( p_{data}(x)-\log\left( \frac{{p_{data}(x) + p_{g}(x)}}{2}  \right)-\log(2) \right) + p_{data}(x)(\log\left( p_{g}(x)-\log\left( \frac{{p_{data}(x) + p_{g}(x)}}{2} \right)-\log(2) \right)  \\
+&= -2\log(2) + \int_{x}p_{data}(x)\left( p_{data}(x) - \log\left( \frac{{p_{data}(x) + p_{g}(x)}}{2} \right) \right)dx + \int_{x}p_{g}(x)\left( p_{g}(x) - \log\left( \frac{{p_{data}(x) + p_{g}(x)}}{2} \right) \right)dx \\
+&=-\log(4) + D_{KL}\left( p_{data}(x) || \log\frac{{p_{data}(x) + p_{g}(x)}}{2} \right) + D_{KL}\left( p_{g}(x) || \log\frac{{p_{g}(x) + p_{g}(x)}}{2} \right)  \\ \\
+\because D_{KL}(P||Q) &= \sum P(x)\log\left( \frac{P(x)}{Q(x)} \right)
+\end{align}
+$$
 
+The final two terms make up what's called the Jensen-Shannon Divergence, which is, in layman's terms, the "distance-ification" of [[Kullback-Leibler Divergence]], which can go to negatives. 
+$$
+J(P, Q) = \frac{1}{2}(D_{KL}(P||R) + D_{KL}(Q||R)) \quad where \quad R= \frac{{P+Q}}{2}
+$$
+Therefore, the final expression for $C(G)$ becomes:
+$$
+\begin{align} \\
+C(G) &= \mathbb{E}_{x \sim p_{data}(x)}[\log D(x)] +\mathbb{E}_{z \sim p_{z}(z)}[\log(1 - D(G(z)))]\\
+&=\int_{x}p_{data}(x)\log(D(x)) + p_{g}(x)\log(1-D(x))dx  \\
+&= -\log(4) + D_{KL}\left( p_{data}(x) || \log\frac{{p_{data}(x) + p_{g}(x)}}{2} \right) + D_{KL}\left( p_{g}(x) || \log\frac{{p_{g}(x) + p_{g}(x)}}{2} \right) \\
+&= -\log(4) + 2J(p_{data}(x), p_{g}(x))
+\end{align}
+$$
 
+The Discriminator's goal is to **minimize** the value function. Since the Jensen-Shannon Divergence is a distance metric, it can't go below zero, and it's minimum is zero if and only if $p_{data}(x) = p_{g}(x)$, proving our intuition.
 
+### 5. Visual representation
+![[스크린샷 2024-12-26 155222.png]]
+The Discriminator is the blue line and the generator is the green line. As the model get's trained, the generator becomes more and more similar to the real data's distribution (black dotted line), and the discriminator, once being a somewhat competent logarithmic classifier, converges to a coefficient $\frac{1}{2}$ , essentially being unable to tell apart the real data from the fake.
 
+## Pros and Cons of GAN
+GAN is a powerful generative model that laid the groundwork for modern generative artificial intelligence. GAN is powerful in that it does not need [[Markov Chains]] or [[Backpropagation]] during the training process. However, GAN still has some glaring weaknesses.
 
+### 1. Mode Collapse
+This is when GAN fails to generalize properly due to the generator finding a sample that the discriminator can't distinguish accurately early on during the training process, and generating only samples that match the low-accuracy samples only. the _Helvetica Scenario_ is an infamous example of this, where the generator only generated images of 0.
+
+### 2. Vanishing Gradient
+Contrary to the mode collapse, if the discriminator learns too fast compared to the generator, the model cannot further lower its loss function and the gradient converges to zero. 
 
 
 ---
-Categories: [[Machine Learning]], [[Reinforcement Learning]], [[Generative Artificial Intelligence]]
+Categories: [[Machine Learning]], [[Generative Artificial Intelligence]]
 References:
 https://arxiv.org/abs/1406.2661
 https://en.wikipedia.org/wiki/Generative_adversarial_network
