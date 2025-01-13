@@ -85,7 +85,7 @@ C(G) &=\int_{x}p_{data}(x)\log(D(x)) + p_{g}(x)\log(1-D(x))dx  \\
 \end{align}
 $$
 
-The final two terms make up what's called the Jensen-Shannon Divergence, which is, in layman's terms, the "distance-ification" of [[Kullback-Leibler Divergence]], which is _not_ symmetrical. 
+The final two terms make up what's called the Jensen-Shannon Divergence, which is, in layman's terms, the "metric-ification" of [[Kullback-Leibler Divergence]], which is _not_ symmetrical. 
 $$
 J(P, Q) = \frac{1}{2}(D_{KL}(P||R) + D_{KL}(Q||R)) \quad where \quad R= \frac{{P+Q}}{2}
 $$
